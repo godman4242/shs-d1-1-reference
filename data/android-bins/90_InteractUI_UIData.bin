@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uidata>
+
+	<ui>
+		<title>peddler</title>
+		<menu>
+		<option><label>83</label><icon>15</icon><action><id>peddlerbuy</id></action></option> <!-- buy buyicon-->
+		<option><label>84</label><icon>16</icon><action><id>peddlersell</id></action></option> <!-- sell sellicon-->
+		<option><label>85</label><icon>14</icon><action><id>close</id></action></option> <!-- leave leaveicon-->
+		</menu>
+	</ui>
+	
+	<ui>
+		<title>market</title>
+		<menu>
+		<option><label>269</label><icon>1</icon><condition><has><id>20040</id><qty>1</qty></has></condition><action><id>goto</id><param>1</param><condition><has><id>20040</id><qty>1</qty></has></condition><errormsg>270</errormsg></action></option> <!-- "sell crops" shopicon "you don't have any crops for sale" note: can have condition in option and also in action-->
+		<option><label>523</label><icon>15</icon><action><id>goto</id><param>2</param></action></option> <!-- "buy commodities" buyicon-->
+		<option><label>524</label><icon>16</icon><action><id>goto</id><param>3</param></action></option> <!-- "sell commodities" sellicon-->
+		<option><label>85</label><icon>14</icon><action><id>close</id></action></option> <!-- leave leaveicon-->
+		</menu>
+		<menu>
+		<option><label>271</label><icon>1</icon><action><id>sellcrop</id><param>0</param></action></option> <!-- sell to red shopicon-->
+		<option><label>272</label><icon>1</icon><action><id>sellcrop</id><param>1</param></action></option> <!-- sell to green shopicon-->
+		<option><label>273</label><icon>1</icon><action><id>sellcrop</id><param>2</param></action></option> <!-- sell to blue shopicon-->
+		<option><label>274</label><icon>1</icon><action><id>sellcrop</id><param>3</param></action></option> <!-- sell to yellow shopicon-->
+		<option><label>232</label><icon>23</icon><action><id>goto</id><param>0</param></action></option> <!-- back backicon-->
+		</menu>
+		<menu>
+		<option><label>513</label><icon>15</icon><action><id>buygoods</id><param>0</param></action></option> <!-- "buy tea leaves" buyicon-->
+		<option><label>514</label><icon>15</icon><action><id>buygoods</id><param>1</param></action></option> <!-- "buy silk" buyicon-->
+		<option><label>515</label><icon>15</icon><action><id>buygoods</id><param>2</param></action></option> <!-- "buy spices" buyicon-->
+		<option><label>516</label><icon>15</icon><action><id>buygoods</id><param>3</param></action></option> <!-- "buy ceramics" buyicon-->
+		<!-- <option><label>517</label><icon>15</icon><action><id>buygoods</id><param>4</param></action></option>--> <!-- "buy opium" buyicon-->
+		<option><label>232</label><icon>23</icon><action><id>goto</id><param>0</param></action></option> <!-- back backicon-->
+		</menu>
+		<menu>
+		<option><label>518</label><icon>16</icon><condition><has><id>20054</id><qty>1</qty></has></condition><action><id>sellgoods</id><param>0</param></action></option> <!-- "sell tea leaves" buyicon-->
+		<option><label>519</label><icon>16</icon><condition><has><id>20055</id><qty>1</qty></has></condition><action><id>sellgoods</id><param>1</param></action></option> <!-- "sell silk" buyicon-->
+		<option><label>520</label><icon>16</icon><condition><has><id>20056</id><qty>1</qty></has></condition><action><id>sellgoods</id><param>2</param></action></option> <!-- "sell spices" buyicon-->
+		<option><label>521</label><icon>16</icon><condition><has><id>20057</id><qty>1</qty></has></condition><action><id>sellgoods</id><param>3</param></action></option> <!-- "sell ceramics" buyicon-->
+		<!-- <option><label>522</label><icon>16</icon><condition><has><id>20058</id><qty>1</qty></has></condition><action><id>sellgoods</id><param>3</param></action></option>--> <!-- "sell opium" buyicon-->
+		<option><label>232</label><icon>23</icon><action><id>goto</id><param>0</param></action></option> <!-- back backicon-->
+		</menu>
+	</ui>
+	
+	<ui>
+		<title>vegpatch</title>
+		<menu>
+		<option><label>256</label><icon>12</icon><action><id>goto</id><param>1</param></action></option>  <!-- "plant seeds" useicon-->
+		<option><label>85</label><icon>14</icon><action><id>close</id></action></option> <!-- leave leaveicon-->
+		</menu>
+		<menu>
+		<option><label>263</label><icon>18</icon><action><id>plant</id><param>1</param></action></option> <!-- "plant 15m seeds" itemicon-->
+		<option><label>264</label><icon>18</icon><action><id>plant</id><param>2</param></action></option> <!-- "plant 1h seeds" itemicon-->
+		<option><label>265</label><icon>18</icon><action><id>plant</id><param>3</param></action></option> <!-- "plant 6h seeds" itemicon-->
+		<option><label>266</label><icon>18</icon><action><id>plant</id><param>4</param></action></option> <!-- "plant 12h seeds" itemicon-->
+		<option><label>232</label><icon>23</icon><action><id>goto</id><param>0</param></action></option>   <!-- back backicon-->
+		</menu>
+		<menu>
+		<option><label>254</label><icon>12</icon><action><id>harvest</id><ap>1</ap></action></option>  <!-- "harvest" useicon-->
+		<option><label>232</label><icon>23</icon><action><id>close</id></action></option>   <!-- back backicon-->
+		</menu>
+	</ui>
+	
+	<ui>
+		<title>stables</title>
+		<menu>
+		<option><label>85</label><icon>14</icon><action><id>close</id></action></option> <!-- leave leaveicon options are generated dynamically for stables-->
+		</menu>
+	</ui>
+	
+	<ui>
+		<title>merchant</title>
+		<menu>
+		<option><label>83</label><icon>15</icon><action><id>merchantbuy</id></action></option> <!-- buy buyicon-->
+		<option><label>84</label><icon>16</icon><action><id>merchantsell</id></action></option> <!-- sell sellicon-->
+		<option><label>85</label><icon>14</icon><action><id>close</id></action></option> <!-- leave leaveicon-->
+		</menu>
+	</ui>
+	
+	<ui>
+		<title>inn</title>
+		<menu>
+		<option><label>93</label><icon>2</icon><action><id>innrest</id></action></option> <!-- "rest in inn" resticon-->
+		<option><label>83</label><icon>15</icon><action><id>innbuy</id></action></option> <!-- buy buyicon-->
+		<option><label>85</label><icon>14</icon><action><id>close</id></action></option> <!-- leave leaveicon-->
+		</menu>
+		<menu>
+		<option><label>85</label><icon>14</icon><action><id>close</id></action></option> <!-- leave leaveicon not enough money-->
+		</menu>
+	</ui>
+	
+	<ui>
+		<title>rebirth</title>
+		<menu>
+		<option><label>1</label><icon>12</icon><condition><has><id>25</id><qty>9</qty><comp>lt</comp></has></condition><action><id>goto</id><param>1</param></action></option> <!-- "yes" useicon-->
+		<option><label>1</label><icon>12</icon><condition><has><id>25</id><qty>9</qty><comp>gte</comp></has></condition><action><id>firerebirth</id></action></option> <!-- "yes" useicon >=10 dan, no element boost-->
+		<option><label>0</label><icon>14</icon><action><id>close</id></action></option> <!-- "no" leaveicon-->
+		</menu>
+		<menu>
+		<option><label>507</label><icon>24</icon><action><id>firerebirth</id></action></option> <!-- "fire" fireicon-->
+		<option><label>510</label><icon>27</icon><action><id>earthrebirth</id></action></option> <!-- "earth" fireicon-->
+		<option><label>508</label><icon>25</icon><action><id>windrebirth</id></action></option> <!-- "wind" fireicon-->
+		<option><label>509</label><icon>26</icon><action><id>waterrebirth</id></action></option> <!-- "water" fireicon-->
+		</menu>
+	</ui>
+	
+	<ui>
+		<title>barber</title>
+		<menu>
+		<option><label>83</label><icon>15</icon><action><id>barberbuy</id></action></option> <!-- buy buyicon-->
+		<option><label>85</label><icon>14</icon><action><id>close</id></action></option> <!-- leave leaveicon-->
+		</menu>
+	</ui>
+	
+	<ui>
+		<title>bank</title>
+		<menu>
+		<option><label>680</label><icon>30</icon><action><id>bankstorage</id></action></option> <!-- store items chesticon-->
+		<option><label>85</label><icon>14</icon><action><id>close</id></action></option> <!-- leave leaveicon-->
+		</menu>
+		<menu>
+		<option><label>538</label><icon>15</icon><action><id>goto</id><param>1</param></action></option> <!-- make deposit buyicon-->
+		<option><label>539</label><icon>15</icon><action><id>goto</id><param>2</param></action></option> <!-- make withdrawal buyicon-->
+		<option><label>85</label><icon>14</icon><action><id>close</id></action></option> <!-- leave leaveicon-->
+		</menu>
+		<menu>
+		<option><label>540</label><icon>15</icon><action><id>deposit</id><param>10</param></action></option> <!-- deposit 10 coins buyicon-->
+		<option><label>541</label><icon>15</icon><action><id>deposit</id><param>100</param></action></option> <!-- deposit 100 coins buyicon-->
+		<option><label>542</label><icon>15</icon><action><id>deposit</id><param>1000</param></action></option> <!-- deposit 1000 coins buyicon-->
+		<option><label>232</label><icon>23</icon><action><id>goto</id><param>0</param></action></option> <!-- back backicon-->
+		</menu>
+		<menu>
+		<option><label>543</label><icon>15</icon><action><id>withdraw</id><param>10</param></action></option> <!-- withdraw 10 coins buyicon-->
+		<option><label>544</label><icon>15</icon><action><id>withdraw</id><param>100</param></action></option> <!-- withdraw 100 coins buyicon-->
+		<option><label>545</label><icon>15</icon><action><id>withdraw</id><param>1000</param></action></option> <!-- withdraw 1000 coins buyicon-->
+		<option><label>232</label><icon>23</icon><action><id>goto</id><param>0</param></action></option> <!-- back backicon-->
+		</menu>
+	</ui>
+	
+	<ui>
+		<title>gambling den</title>
+		<menu>
+		<option><label>546</label><icon>15</icon><action><id>goto</id><param>1</param></action></option> <!-- play chohan buyicon-->
+		<option><label>85</label><icon>14</icon><action><id>close</id></action></option> <!-- leave leaveicon-->
+		</menu>
+		<menu>
+		<option><label>547</label><icon>12</icon><action><id>goto</id><param>2</param></action></option> <!-- confirm bet useicon-->
+		<option><label>548</label><icon>15</icon><action><id>bet</id><param>10</param></action></option> <!-- bet 10 coins buyicon-->
+		<option><label>549</label><icon>15</icon><action><id>bet</id><param>100</param></action></option> <!-- bet 100 coins buyicon-->
+		<option><label>550</label><icon>15</icon><action><id>bet</id><param>1000</param></action></option> <!-- bet 1000 coins buyicon-->
+		<option><label>232</label><icon>23</icon><action><id>goto</id><param>0</param></action></option> <!-- back backicon-->
+		</menu>
+		<menu>
+		<option><label>555</label><icon>12</icon><action><id>chohan</id><param>0</param></action></option> <!-- cho (even) useicon-->
+		<option><label>556</label><icon>12</icon><action><id>chohan</id><param>1</param></action></option> <!-- han (odd) useicon-->
+		</menu>
+	</ui>
+	
+	<ui>
+		<title>getcoins</title>
+		<menu>
+		<option><label>558</label><icon>15</icon><action><id>buypremium</id></action></option> <!-- "buy premium items" buyicon-->
+		<option><label>635</label><icon>15</icon><action><id>goto</id><param>3</param></action></option> <!-- "name your weapon" buyicon-->
+		<option><label>692</label><icon>15</icon><action><id>crafting</id></action></option> <!-- "crafting" buyicon-->
+		<option><label>670</label><icon>29</icon><action><id>goto</id><param>4</param></action></option> <!-- "claim your daily prize!" buyicon-->
+		<option><label>132</label><icon>31</icon><action><id>achievement</id></action></option> <!-- "achievements" medalicon-->
+		<option><label>85</label><icon>14</icon><action><id>close</id></action></option> <!-- leave leaveicon-->
+		</menu>
+		<menu>
+		<option><label>1</label><icon>15</icon><action><id>convertgold</id></action></option> <!-- "yes" buyicon1-->
+		<option><label>0</label><icon>14</icon><action><id>close</id></action></option> <!-- "no" leaveicon-->
+		</menu>
+		<menu>
+		<option><label>1</label><icon>15</icon><action><id>fullhpchi</id></action></option> <!-- "yes" buyicon2-->
+		<option><label>0</label><icon>14</icon><action><id>close</id>></action></option> <!-- "no" leaveicon-->
+		</menu>
+		<menu>
+		<option><label>1</label><icon>15</icon><action><id>nameweapon</id></action></option> <!-- "yes" buyicon3-->
+		<option><label>0</label><icon>23</icon><action><id>goto</id><param>0</param></action></option> <!-- "no" backicon-->
+		</menu>
+		<menu>
+		<option><label>671</label><icon>29</icon><condition><has><id>30018</id><qty>1</qty></has></condition><action><id>dailyprize</id></action></option> <!-- "claim daily prize" buyicon4-->
+		<option><label>865</label><icon>29</icon><action><id>redeem</id></action></option> <!-- "redeem code" buyicon4-->
+		<option><label>232</label><icon>23</icon><action><id>goto</id><param>0</param></action></option> <!-- "back" backicon-->
+		</menu>
+	</ui>
+	
+	<ui>
+		<title>getap</title>
+		<menu>
+		<option><label>558</label><icon>15</icon><action><id>buypremium</id></action></option> <!-- buy premium items buyicon-->
+		<option><label>635</label><icon>15</icon><action><id>goto</id><param>3</param></action></option> <!-- name your weapon buyicon-->
+		<option><label>692</label><icon>15</icon><action><id>crafting</id></action></option> <!-- "crafting" buyicon-->
+		<option><label>670</label><icon>29</icon><action><id>goto</id><param>4</param></action></option> <!-- "claim your daily prize!" buyicon-->
+		<option><label>132</label><icon>31</icon><action><id>achievement</id></action></option> <!-- "achievements" medalicon-->
+		<option><label>85</label><icon>14</icon><action><id>close</id></action></option> <!-- leave leaveicon-->
+		</menu>
+		<menu>
+		<option><label>1</label><icon>15</icon><action><id>convertgold</id></action></option> <!-- "yes" buyicon-->
+		<option><label>0</label><icon>23</icon><action><id>goto</id><param>0</param></action></option> <!-- "no" backicon-->
+		</menu>
+		<menu>
+		<option><label>1</label><icon>15</icon><action><id>fullhpchi</id></action></option> <!-- "yes" buyicon-->
+		<option><label>0</label><icon>23</icon><action><id>goto</id><param>0</param></action></option> <!-- "no" backicon-->
+		</menu>
+		<menu>
+		<option><label>1</label><icon>15</icon><action><id>nameweapon</id></action></option> <!-- "yes" buyicon-->
+		<option><label>0</label><icon>23</icon><action><id>goto</id><param>0</param></action></option> <!-- "no" backicon-->
+		</menu>
+		<menu>
+		<option><label>671</label><icon>29</icon><condition><has><id>30018</id><qty>1</qty></has></condition><action><id>dailyprize</id></action></option> <!-- "claim daily prize" buyicon-->
+		<option><label>865</label><icon>29</icon><action><id>redeem</id></action></option> <!-- "redeem code" buyicon4-->
+		<option><label>232</label><icon>23</icon><action><id>goto</id><param>0</param></action></option> <!-- "back" backicon-->
+		</menu>
+	</ui>
+	
+	<ui>
+		<title>leaveclan</title>
+		<menu>
+		<option><label>1</label><icon>12</icon><action><id>leaveclan</id></action></option> <!-- "yes" useicon-->
+		<option><label>0</label><icon>14</icon><action><id>close</id></action></option> <!-- "no" leaveicon-->
+		</menu>
+	</ui>
+	
+	<ui>
+		<title>blacksmith</title>
+		<menu>
+		<option><label>660</label><icon>15</icon><action><id>goto</id><param>1</param></action></option> <!-- "forge a weapon" buyicon-->
+		<option><label>661</label><icon>15</icon><action><id>goto</id><param>2</param></action></option> <!-- "repair weapon" buyicon-->
+		<option><label>662</label><icon>15</icon><action><id>goto</id><param>3</param></action></option> <!-- "reinforce weapon" buyicon-->
+		<option><label>85</label><icon>14</icon><action><id>close</id></action></option> <!-- "leave" leaveicon-->
+		</menu>
+		<menu>
+		<option><label>1</label><icon>15</icon><action><id>forgeweapon</id><param>3</param></action></option> <!-- "yes" buyicon-->
+		<option><label>0</label><icon>23</icon><action><id>goto</id><param>0</param></action></option> <!-- "no" backicon-->
+		</menu>
+		<menu>
+		<option><label>1</label><icon>15</icon><action><id>repairweapon</id><param>3</param></action></option> <!-- "yes" buyicon-->
+		<option><label>0</label><icon>23</icon><action><id>goto</id><param>0</param></action></option> <!-- "no" backicon-->
+		</menu>
+		<menu>
+		<option><label>1</label><icon>15</icon><action><id>reinforceweapon</id><param>3</param></action></option> <!-- "yes" buyicon-->
+		<option><label>0</label><icon>23</icon><action><id>goto</id><param>0</param></action></option> <!-- "no" backicon-->
+		</menu>
+	</ui>
+	
+	<ui>
+		<title>recentevents</title>
+		<menu>
+		<option><label>744</label><icon>11</icon><action><id>recenteventsscrolldown</id><param>1</param></action></option> <!-- "view more..." lookicon-->
+		<option><label>85</label><icon>14</icon><action><id>close</id></action></option> <!-- "leave" leaveicon-->
+		</menu>
+	</ui>
+	
+	<ui>
+		<title>playerpanel</title>
+		<menu>
+		<option><label>231</label><icon>21</icon><action><id>challenge</id></action></option> <!-- "challenge" attackicon-->
+		<option><label>485</label><icon>4</icon><action><id>duelreplay</id></action></option> <!-- "view duel replay" searchicon-->
+		<option><label>754</label><icon>29</icon><action><id>goto</id><param>1</param></action></option> <!-- "give/teach" itemicon-->
+		<option><label>230</label><icon>19</icon><condition><has><id>64</id><qty>1</qty><comp>not</comp></has></condition><action><id>addfriend</id></action></option> <!-- "add to friends list" addicon-->
+		<option><label>232</label><icon>23</icon><action><id>close</id></action></option> <!-- "back" backicon-->
+		</menu>
+		<menu>
+		<option><label>234</label><icon>15</icon><action><id>givecoins</id></action></option> <!-- "give coins" buyicon-->
+		<option><label>235</label><icon>18</icon><action><id>giveitem</id></action></option> <!-- "give item" itemicon-->
+		<option><label>6116</label><icon>24</icon><condition><has><id>1056</id><qty>1</qty></has></condition><condition><has><id>65</id><qty>1</qty></has></condition><action><id>teachfire1</id></action></option> <!-- "Dragon Dance Step: Fire" fireicon-->
+		<option><label>6124</label><icon>24</icon><condition><has><id>1060</id><qty>1</qty></has></condition><condition><has><id>65</id><qty>1</qty></has></condition><action><id>teachfire2</id></action></option> <!-- "Dragon Dance Step: Fire II" fireicon-->
+		<option><label>6118</label><icon>26</icon><condition><has><id>1057</id><qty>1</qty></has></condition><condition><has><id>65</id><qty>1</qty></has></condition><action><id>teachwater1</id></action></option> <!-- "Dragon Dance Step: Water" watericon-->
+		<option><label>6126</label><icon>26</icon><condition><has><id>1061</id><qty>1</qty></has></condition><condition><has><id>65</id><qty>1</qty></has></condition><action><id>teachwater2</id></action></option> <!-- "Dragon Dance Step: Water II" watericon-->
+		<option><label>6120</label><icon>25</icon><condition><has><id>1058</id><qty>1</qty></has></condition><condition><has><id>65</id><qty>1</qty></has></condition><action><id>teachwind1</id></action></option> <!-- "Dragon Dance Step: Wind" windicon-->
+		<option><label>6128</label><icon>25</icon><condition><has><id>1062</id><qty>1</qty></has></condition><condition><has><id>65</id><qty>1</qty></has></condition><action><id>teachwind2</id></action></option> <!-- "Dragon Dance Step: Wind II" windicon-->
+		<option><label>6122</label><icon>27</icon><condition><has><id>1059</id><qty>1</qty></has></condition><condition><has><id>65</id><qty>1</qty></has></condition><action><id>teachearth1</id></action></option> <!-- "Dragon Dance Step: Earth" earthicon-->
+		<option><label>6130</label><icon>27</icon><condition><has><id>1063</id><qty>1</qty></has></condition><condition><has><id>65</id><qty>1</qty></has></condition><action><id>teachearth2</id></action></option> <!-- "Dragon Dance Step: Earth II" earthicon-->
+		<option><label>232</label><icon>23</icon><action><id>goto</id><param>0</param></action></option> <!-- "back" backicon-->
+		</menu>
+	</ui>
+	
+	<ui>
+		<title>joincustomclanrecruit</title>
+		<menu>
+		<option><label>1</label><icon>12</icon><action><id>joincustomclanrecruit</id></action></option> <!-- "yes" useicon-->
+		<option><label>0</label><icon>14</icon><action><id>close</id></action></option> <!-- "no" leaveicon-->
+		</menu>
+		<menu>
+		</menu>
+	</ui>
+	
+	<ui>
+		<title>joincustomclangeneral</title>
+		<menu>
+		<option><label>1</label><icon>12</icon><action><id>joincustomclangeneral</id></action></option> <!-- "yes" useicon-->
+		<option><label>0</label><icon>14</icon><action><id>close</id></action></option> <!-- "no" leaveicon-->
+		</menu>
+		<menu>
+		</menu>
+	</ui>
+	
+	<ui>
+		<title>towntoll</title>
+		<menu>
+		<option><label>877</label><icon>15</icon><action><id>paytowntoll</id></action></option> <!-- "pay toll" buyicon-->
+		<option><label>85</label><icon>14</icon><action><id>close</id></action></option> <!-- "leave" leaveicon-->
+		</menu>
+		<menu>
+		<option><label>878</label><icon>7</icon><action><id>entertown</id></action></option> <!-- "enter" travelicon-->
+		</menu>
+		<menu>
+		</menu>
+	</ui>
+
+
+</uidata>

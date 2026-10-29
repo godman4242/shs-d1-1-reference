@@ -1,0 +1,472 @@
+!
+"1">current leveldamage: 5def: 10chi: 10<p
+"left">enemy troops: ???samurai on guard:boba (1)<font face="E
+%
+&: 1 - 1 (
+&: 1 - 1)
+&quot;Odds&quot; refers to the estimated profit that you will make for each token that you bet.example: If you bet 2 tokens at 1.5 odds, you will make an estimated profit of 3 gold when your bet wins
+(
+(min - max)
+)
+):
++
++ 9999
++1
++10
++3
++50
+- A side wins when it controls 80% of the battlefield.- A side loses when it&apos;s Castle HQ is captured.
+- Each turn, every player gets 3 moves.- Moves can be used to deploy troops, attack enemy troops, move to a different sector or to spy on the enemy.- moves can only be used on sectors near the player.
+- Troops will advance on enemy sectors every 24 hours.- If a sector has more attacking troops than defending troops, the sector will be captured by the attackers.- use the &quot;deploy troops&quot; action to increase the number of troops in a sector.
+- higher ranking players will have more moves per turn and will also be able to perform special actions.- your rank is based on the number of moves that you have made.- donating coins to the war effort will also help the player to rise in rank faster.
+- when you select the &quot;attack&quot; or &quot;defend&quot; action, you will personally fight against the enemy troops.- if enemy players are present in the sector, you will also encounter them during battle.- defeating enemy players will remove them from the sector and kidk them off the battlefield.<
+-(:   :   :
+-10.25
+...
+.Note: Odds are changed whenever someone makes a bet and are only finalized when betting is closed.
+/
+/font>
+/leave
+/list
+/recall !/leavetown "/tournament
+/stopally [ /allyroom #/stopallyall
+/stopignore ["/showignore
+/unban [j/bow, /kneel, /sit, /stand, /fart, /sadtrombone, /rimshot, /gangnamstyle, /rest, /seppuku, /shoulderweapon /showally
+0
+0/20
+00" kerning="1">a
+00" kerning="1">fire atk: 23water atk: 1wind atk: 2earth atk: 3<p
+1
+1)
+1) pick a side.2) select a battle to join.3) select the sector with your side&apos;s castle HQ and select the &quot;MOVE&quot; action to enter the battlefield.
+10
+100
+1000
+1000 XP
+1000/1000
+1000/1000/1000
+10000
+10000 / 10000
+10000/10000/10000
+100000
+10000000
+10:00:00
+125 gold
+14.99 USD
+16" color="#ffffff" letterSpacing="0.00" kerning="1">dasd
+19.99 USD
+2
+200
+200 gold
+24 hours
+24.99 USD
+25
+275 gold
+3 MOVE(S) left
+30
+3:00:00
+4" color="#ffffff" letterSpacing="0.00" kerning="1">891011
+4.99 USD
+40/40
+400
+400 / 200 / 100
+400 gold
+5
+50
+50 gold
+50%
+50/50
+500
+5:00
+8
+80
+800
+9.99 USD
+9/9
+90%
+99
+999
+999 / 999
+999 AP
+9999
+999999
+999:99:99
+99:99:99
+:
+:  -:
+: 1 - 1
+<font color='
+<font face="EPSON
+="1">physical dmg: 1234 - 1235 &nbsp;(heavy)critical dmg: 1234-1235 *(heavy)piercing dmg: 20<font face="Edo SZ" size="14" color="#cccccc" letterSpacing="0.
+="Edo SZ" size="14" color="#ffffff" letterSpacing="0.00" kerning="1">89
+="Edo SZ" size="14" color="#ffffff" letterSpacing="0.00" kerning="1">or for free(!!!) by completing surveysand other offers at:
+?
+A
+A+
+AAAaaa (level 6)
+ACHIEVEMENT UNLOCKED
+AKA ryu clan
+Atk
+Auto Assign
+Available Duel commands:A/emotes - lists the available emotes5/ping - displays latency:/showally - lists your alliesJ/ally [player name] - marks player as an allyQ/allyroom - marks all players in the room as an allyO/stopally [player name] <font color='#C
+B
+B+
+BALANCED STANCE
+BEST!1000!1000-http://www.strawhatsamuraiduels.com/watch?id=
+BOB
+BUY ASSASSIN HOOD?
+Barricades- total cost: 10000- Grants a defense bonus to the sector
+Build Menu
+By clicking &quot;Create&quot;, you are &nbsp;agreeing to the Terms and Conditions.
+By clicking &quot;Register&quot;, you are &nbsp;agreeing to the Terms and Conditions.
+By clicking &quot;Register&quot;, you are agreeing to the Terms and Conditions.
+CCCCC'>- stop allying with playerI/stopallyall - stop allying with all players
+CONFIRM password
+Character &nbsp;select
+Chi
+Congratulations! You are now level 10 and are able to join the war room.Fighting for a clan is a good way to earn coins, equipment and even gold.<font face="Edo SZ" s
+D
+D+
+Def
+E
+E+
+EMAIL
+ENTER NEW NAME
+Edit user
+Error: Your device/computer is behind a NAT or router that is preventing it from receiving messages from the game server.
+FFF
+FIGHT!
+GENDER
+Give XXX
+Global Effect
+Guest mode level limit reached.Register now to get beyond level 9!
+HAT
+HP
+I
+II
+INVENTORY
+If you have an existing user, just reregister your username with the same password and email to get your character back.
+Item Name
+LOCATION
+Ladder- total cost: 5000- Bypasses barriers surrounding the sector
+Legend
+Level 100
+Loading game files...
+N
+Next level
+OBJECTIVE
+Online
+Player
+Please reenter your email address.This will be used for verification &nbsp;when you wis
+Purchasing gold will support Straw Hat Samurai: Duels and help fund the development of new features!
+QUEST COMPLETED
+Quest: find the culprit behind masahiro&apos;s murder
+REGISTER player
+REWARD
+Register new user
+Register now to fight LIVE PVP duels!
+Register now to get gold!
+RoomType x
+S
+S+
+STORAGE
+Say:
+Select a Sector
+Select a battle
+Skills EQUIPPED
+Spd
+TOURNAMENT
+TOURNAMENT of champions
+Territory(9999,9999)Sector(2,3)
+Text
+Thank you for registering.A verification email has been sent to your email account.<font face="Calibri" size="14" color="#ffffff"
+Try again after payment is completed.
+Use your Facebook email ID if you want &nbsp;to link this user to your &nbsp;Facebook account.
+Use your Facebook email ID if you want &nbsp;to link this user to your Facebook account.
+V
+WAR
+WAR room
+War room rules 1/6 &nbsp;(joining a battle)
+War room rules 2/6 &nbsp;(Turns AND MOVES)
+War room rules 3/6 (attacking and defending)
+War room rules 4/6 &nbsp;(CAPTURING Sectors)
+War room rules 5/6 &nbsp;(WINNING AND LOSING)
+War room rules 6/6 &nbsp;(rank)
+Warning:Items will be lost if you refresh before the trade is completed.
+Weekly rankings
+Weight: 50/50
+YOU WIN!
+You do not have any quests.
+You received gifts fromxxx, fffff, sssssss, aaaaaaaa, ffffffff
+Your device/computer is behind a NAT or router that is preventing it from receiving messages <font face="Calibri" size="14" color="#ffffff" letterSpacing="0.00" ker
+[
+]
+] #/help:emotes $/help:channel !/help:ally #/whoisonline
+aaa
+aaa<font face="Edo SZ" size="16" color="#ffffff" letterSpacing="0.
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaoooooooooooooo
+achievements
+action points
+actions available for this sector
+aka ryu crops: +2bob crops: -2
+align="center">next leveldamage: 10def: 20<font face="Edo SZ" size="13" colo
+align="center">physical def: 100 (heavy)fire def: 23water def: 1<p alig
+align="left">level requirement: 10 - 30autostarts upon full rosterround duration: 30 min
+allegiance: AKA RYU clanrank: soldier (3 moves a turn)moves made: 15/60
+ap
+are you sure you want to abandon&quot;banana republic&quot;?
+asdasd
+asgagas
+assign staff to this roomto send them on missions.
+auto slash off
+auto slash on
+autoresolves upon round timeoutorganizer: chronos
+autostart
+available skill points: 999
+available stat points: 999
+balanced stance mastery level 10.
+banana town
+banana town hellow ok what is it leonard town ok come here asdasdas banana town hellow ok
+bananamanhello
+bestdeal!
+build
+build room
+buttonText
+capacity: 5/5 (Full)
+castle town
+change stance
+character name
+chat
+chat notifications
+chikako refund!
+chronos
+cing="0.00" kerning="1">4567<font face="Edo SZ" size="1
+cing="0.00" kerning="1">ldma<p align="cente
+city
+clan acronym
+clan color
+clan crops: 130 *(+1 hq)
+clan leader
+clan name
+clan orbat
+click &quot;get gold&quot; after payment is completed
+coins
+color="#ffffff" letterSpacing="0.00" kerning="1">78
+command hqs: &nbsp;4 / 5
+commanders
+condition: well-maintained23<font face="Edo SZ" size="14" color="#
+connecting to server...
+cost
+crafting
+create clan
+create new character
+critically injured
+current
+defeat all enemies!
+delete character?
+demolish room
+design
+destroyed
+displayname
+do SZ" size="14" color="#000000" letterSpacing="0.00" kerning="1">bonga (2)fish (3)15
+double damage
+drag to view
+draw a line to slash
+duel
+duel tokens
+e
+enter name to disable ability to build hq
+enter the code 1234567
+enter your message here
+enter your message hereadasdasdasdasdas
+enter">skill cooldown modifier: 0.75
+entry fee
+error: Name already in use
+error: data corrupted
+experience points
+eye of the beheader
+face
+fame
+ffffff" letterSpacing="0.00" kerning="1">4567
+ffffff" letterSpacing="0.00" kerning="1">4567<font face
+fight pvp duels! amass loot! wage war!
+fire
+fireball IIIThrow a fiery projectile at enemies<font face="Edo SZ" size="13" color="#cccccc" letterSpacing="0.00" kerning=
+flags indicate battles that theclans are currently engaged in
+forward base- total cost: 10000- allows clan samurai to spawn closer to the front lines</font
+gaga
+game paused
+get 20% more gold!
+get gold
+give xxx to bbbb blash asdasd asdasd asdasd sadasdasdasda(this quest expires at the end of the day)
+gold
+golden tokens
+graveyard
+graveyard is empty.
+grey territories - &nbsp;level too lowred territories - &nbsp;&nbsp;level too high
+h to change your password.
+hair
+harvest
+has declined your challenge.
+healthy
+high riskrecommended level: 80
+hit combo
+hp: 123 / 123 &nbsp;(hp regen 12 ) chi: 123 / 434 &nbsp;(chi regen 13)<font face="Edo SZ" size="14" color="#cccccc" letterSpacing="0.00" kerning
+ing="0.00" kerning="1">aadd
+ing="0.00" kerning="1">aaddas<font face="Edo SZ" size="
+interact with village
+invite afriend
+is now a member of your staff!
+item name
+itemDesc123<font face="Edo SZ" size="14" color="#ffffff" letterSpa
+itemName
+itemQty
+ize="16" color="#333333" letterSpacing="0.00" kerning="1">lllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll
+jebediah suzuki&apos;s trade quest
+joined
+kageyoshinomaru
+kitchen
+lden tokensFirst prize: 3 Goldsecond prize: 2 Goldthird prize: 1 Gold<p
+leaderboards
+letterSpacing="0.00" kerning="1">Please verify your email before logging in.
+level 10
+level 3
+level 99
+level 999
+loading...
+locked
+login
+losonosantoaser
+lutc logged in
+max level
+merchant training room
+message board
+message boardsdsdsdsadasds
+message of the day
+min level
+mission in progress
+mission info
+mission info mission info mission info mission info mission info mission info mission info &nbsp;mission info mission info adasdas
+mission result
+missions
+modify living quarters
+monedas
+morale
+morale 50%
+mostpopular!
+mouseover itemname
+msgtext
+msgtext12<font face="Edo SZ" size="16" color="#ffffff" letterSpaci
+n
+n="center">wind def: 2earth def: 3slash distance: 345 (heavy)<p align="c
+name
+naruto
+naruto anana
+narutobanana
+next turn IN 2:34:34
+ng="0.00" kerning="1">34
+ng="0.00" kerning="1">3456<font face="Edo SZ" size="16"
+ning="1">from the game server.
+ninja apple (found: 5)
+ninja crates
+ninja services
+no active tournaments.
+no available missions.
+normalText
+not accepting members at the moment
+note: graveyard is full. the oldest corpse will be replaced when a new corpse arrives.
+note: quest log is full. complete or abandon current quests to accept more quests.
+npcName
+odds
+ok
+opponent is offline
+options
+page 1/2
+password
+player
+playername
+players
+prizes (1st / 2nd / 3rd)
+production
+quality: high
+quest
+quest log
+questMainText
+questSubText
+quests
+r">p
+r="#cccccc" letterSpacing="0.00" kerning="1">chi: 10
+r="#cccccc" letterSpacing="0.00" kerning="1">town prosperity +10
+rank
+rare crops Collection (100%)
+ready
+ready in 40:34
+reconnecting to server...
+requires
+resend validation
+return to title screen?
+reward
+rifier Cadeaux
+round duration
+round ends 24:50:35
+s
+second-in-command
+sector (-2, 33)
+sector: (2,4)status: under attackfriendly Troops: 256<p align=
+select 5 crates
+select a payment provider
+select a skill category
+select side to attack
+selectItemName
+shop
+skill points
+skill points required: 1
+skills
+special offer expires in 24:03:03
+specialoffer!
+squad info
+squad rank
+start game
+stat points
+stats
+status: waiting for participants ( 5 / 8 )players: &nbsp;8entry fee: 2 go
+storage
+success
+success probability
+success probability: 90%
+sword of wonders1345 XP435 coins<font face="Edo SZ" size="14" colo
+symbol
+symbol Color
+territory
+textgggooo
+textgggooo<font face="Edo SZ" size="16" color="#ffffff" letterSpac
+title
+to save your progressand play online!
+tournament full
+tournament of champions
+town
+trade with narutobanana
+troops will attempt sector capture IN 2:34:34
+upgrade to level 2
+upgraded
+username
+username/email
+v1.000
+victory Quote
+village
+w
+weekly rankings
+wins/loss/DRAW
+wor<font face="Edo SZ" size="18" color="#000000" letterSpa
+workshop
+wrong code
+xp
+xp buff
+xp buff 1:12:34
+yes
+you
+you achieved
+you can also get gold by using your mobile phone<font face
+you received
+your weapon broke!would you like to make it unbreakable for 5 gold?
+yourbets

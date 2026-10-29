@@ -1,0 +1,482 @@
+<anim i="aimarrow" d="1">
+<anim i="airstab_end" d="10">
+<anim i="airstab_mid" d="10">
+<anim i="airstab_stab" d="2">
+<anim i="airstab_start" d="7">
+<anim i="arrownormalpose" d="22">
+<anim i="backspin" d="20">
+<anim i="backstep" d="16">
+<anim i="backstep_end" d="10">
+<anim i="backstep_start" d="5">
+<anim i="backthrow" d="39">
+<anim i="backthrow_victim" d="36">
+<anim i="balanced_downslash_parta" d="13">
+<anim i="balanced_downslash_partb" d="12" l="1">
+<anim i="balanced_downslash_partc" d="7">
+<anim i="balanced_downslash_partd" d="1">
+<anim i="balanced_fallslash_parta" d="6">
+<anim i="balanced_fallslash_partb" d="1">
+<anim i="balanced_fallslash_partc" d="1">
+<anim i="balanced_horslash_parta" d="12">
+<anim i="balanced_horslash_partb" d="9" l="1">
+<anim i="balanced_horslash_partc" d="4">
+<anim i="balanced_horslash_partd" d="1">
+<anim i="balanced_jumpslash_parta" d="7">
+<anim i="balanced_jumpslash_partb" d="1">
+<anim i="balanced_jumpslash_partc" d="5">
+<anim i="balanced_jumpslash_partd" d="1">
+<anim i="balanced_run" d="9" l="1">
+<anim i="balanced_stance" d="1">
+<anim i="balanced_upslash_parta" d="6">
+<anim i="balanced_upslash_partb" d="10" l="1">
+<anim i="balanced_upslash_partc" d="5">
+<anim i="balanced_upslash_partd" d="1">
+<anim i="balancedfallslash_parta" d="5">
+<anim i="balancedfallslash_partb" d="1" l="1">
+<anim i="balancedfallslash_partc" d="1">
+<anim i="balancedhorizontalslash_parta" d="4">
+<anim i="balancedhorizontalslash_partb" d="9" l="1">
+<anim i="balancedhorizontalslash_partc" d="7">
+<anim i="balancedjumpslash_parta" d="7">
+<anim i="balancedjumpslash_partb" d="1">
+<anim i="balancedjumpslash_partc" d="5">
+<anim i="balancedjumpslash_partd" d="4">
+<anim i="balancedjumpslash_parte" d="1">
+<anim i="balancedstanceidle" d="1" l="1">
+<anim i="balancedstancerun" d="9" l="1">
+<anim i="bear_attack" d="18">
+<anim i="bear_death" d="6">
+<anim i="bear_fidget" d="19">
+<anim i="bear_idle" d="1" l="1">
+<anim i="bear_run" d="13" l="1">
+<anim i="bear_sit" d="11">
+<anim i="bear_walk" d="24" l="1">
+<anim i="boar_attack" d="16">
+<anim i="boar_death" d="7">
+<anim i="boar_fidget" d="24">
+<anim i="boar_grazing" d="37">
+<anim i="boar_idle" d="1" l="1">
+<anim i="boar_rolling" d="8" l="1">
+<anim i="boar_run" d="10" l="1">
+<anim i="boar_walk" d="26" l="1">
+<anim i="bowidle" d="1">
+<anim i="brake" d="9">
+<anim i="buffarmor_end" d="7">
+<anim i="buffarmor_start" d="8">
+<anim i="bullcharge_run" d="10" l="1">
+<anim i="bullcharge_start" d="1">
+<anim i="bustpose1" d="1" l="1">
+<anim i="chargedshot_end" d="7">
+<anim i="chargedshot_start" d="4">
+<anim i="chargewithspear" d="15" l="1">
+<anim i="chicharge_end" d="6">
+<anim i="chicharge_fly" d="5">
+<anim i="chicharge_start" d="14">
+<anim i="cleave_end" d="14">
+<anim i="cleave_pose" d="1">
+<anim i="cleave_start" d="9">
+<anim i="corpse1" d="1">
+<anim i="corpse2" d="1">
+<anim i="corpse3" d="1">
+<anim i="corpse4" d="1">
+<anim i="corpse5" d="1">
+<anim i="crouchpickupstand" d="34">
+<anim i="dash_end" d="10">
+<anim i="dash_start" d="5">
+<anim i="death" d="38">
+<anim i="deathbyarrow" d="21">
+<anim i="deathdowned" d="7">
+<anim i="deathenemy" d="23">
+<anim i="deathinhalf" d="28">
+<anim i="deathnohand" d="25">
+<anim i="deathnohead" d="31">
+<anim i="deathtouch_parta" d="1">
+<anim i="deathtouch_partb" d="12">
+<anim i="deathtouch_partc" d="11">
+<anim i="deathtouch_partd" d="12">
+<anim i="deathwitharrow" d="23">
+<anim i="deer_death" d="7">
+<anim i="deer_fidget" d="23">
+<anim i="deer_getup" d="16">
+<anim i="deer_grazing" d="62">
+<anim i="deer_idle" d="1" l="1">
+<anim i="deer_run" d="13" l="1">
+<anim i="deer_sit" d="12">
+<anim i="deer_walk" d="22" l="1">
+<anim i="defeatedanimationv1" d="34">
+<anim i="defeatedanimationv2" d="35">
+<anim i="downed" d="23">
+<anim i="downedup" d="4">
+<anim i="downedup2" d="25">
+<anim i="downstab" d="15">
+<anim i="downstab_up" d="10">
+<anim i="dual_downslash_parta" d="13">
+<anim i="dual_downslash_partb" d="12" l="1">
+<anim i="dual_downslash_partc" d="10">
+<anim i="dual_downslash_partd" d="1">
+<anim i="dual_fallslash_parta" d="6">
+<anim i="dual_fallslash_partb" d="1">
+<anim i="dual_fallslash_partc" d="1">
+<anim i="dual_horslash_parta" d="12">
+<anim i="dual_horslash_partb" d="9" l="1">
+<anim i="dual_horslash_partc" d="6">
+<anim i="dual_horslash_partd" d="1">
+<anim i="dual_jumpslash_parta" d="7">
+<anim i="dual_jumpslash_partb" d="1">
+<anim i="dual_jumpslash_partc" d="6">
+<anim i="dual_jumpslash_partd" d="1">
+<anim i="dual_run" d="9" l="1">
+<anim i="dual_stance" d="1">
+<anim i="dual_upslash_parta" d="6">
+<anim i="dual_upslash_partb" d="10" l="1">
+<anim i="dual_upslash_partc" d="6">
+<anim i="dual_upslash_partd" d="1">
+<anim i="enchantweapon" d="8">
+<anim i="femalewalk" d="33" l="1">
+<anim i="firearrow" d="1">
+<anim i="fireball" d="12">
+<anim i="flinch" d="8">
+<anim i="flinch_weapon" d="8">
+<anim i="flipupfromdowned" d="21">
+<anim i="flurry_parta" d="2">
+<anim i="flurry_partb" d="9">
+<anim i="flurry_partc" d="14">
+<anim i="flurry_partd" d="3">
+<anim i="flurry_pose" d="1">
+<anim i="fly_end" d="2">
+<anim i="fly_start" d="1">
+<anim i="focus_end" d="13">
+<anim i="focus_start" d="8">
+<anim i="forwardroll_end" d="14">
+<anim i="forwardroll_start" d="6">
+<anim i="forwardstep" d="16">
+<anim i="frontspin" d="19">
+<anim i="gangnam" d="88" l="1">
+<anim i="getup_front" d="27">
+<anim i="gob_attack" d="27">
+<anim i="gob_dash_end" d="10">
+<anim i="gob_dash_mid" d="1">
+<anim i="gob_dash_start" d="4">
+<anim i="gob_death" d="42">
+<anim i="gob_fidget" d="18">
+<anim i="gob_idle" d="1" l="1">
+<anim i="gob_jump_end" d="8">
+<anim i="gob_jump_mid" d="2">
+<anim i="gob_jump_start" d="5">
+<anim i="gob_pounce_end" d="10">
+<anim i="gob_pounce_mid" d="13">
+<anim i="gob_pounce_start" d="11">
+<anim i="gob_run" d="10" l="1">
+<anim i="gob_throw" d="20">
+<anim i="gob_walk" d="24" l="1">
+<anim i="gotlauncheddowned" d="18">
+<anim i="gotlauncheddownedend" d="1">
+<anim i="gotlaunchedupwards_parta" d="4">
+<anim i="gotlaunchedupwards_partb" d="9">
+<anim i="gotlaunchedupwards_partc" d="7">
+<anim i="guardian_death" d="54">
+<anim i="guardian_fidget" d="19">
+<anim i="guardian_idle" d="1" l="1">
+<anim i="guardian_run" d="22" l="1">
+<anim i="guardian_stomp" d="9">
+<anim i="guardian_stompfreeze" d="1">
+<anim i="guardian_stomphit" d="5">
+<anim i="guardian_stompreturn" d="7">
+<anim i="guardian_swingdown" d="14">
+<anim i="guardian_swingdownend" d="11">
+<anim i="guardian_swingdownhit" d="7">
+<anim i="guardian_swingup" d="11">
+<anim i="guardian_swingupend" d="11">
+<anim i="guardian_swinguphit" d="7">
+<anim i="guardian_throw" d="16">
+<anim i="guardian_throwrelease" d="4">
+<anim i="guardian_walk" d="24" l="1">
+<anim i="heavy_downslash_parta" d="10">
+<anim i="heavy_downslash_partb" d="9" l="1">
+<anim i="heavy_downslash_partc" d="3">
+<anim i="heavy_downslash_partd" d="1">
+<anim i="heavy_fallslash_parta" d="3">
+<anim i="heavy_fallslash_partb" d="1">
+<anim i="heavy_fallslash_partc" d="1">
+<anim i="heavy_horslash_parta" d="5">
+<anim i="heavy_horslash_partb" d="8" l="1">
+<anim i="heavy_horslash_partc" d="7">
+<anim i="heavy_horslash_partd" d="1">
+<anim i="heavy_jumpslash_parta" d="11">
+<anim i="heavy_jumpslash_partb" d="1">
+<anim i="heavy_jumpslash_partc" d="5">
+<anim i="heavy_jumpslash_partd" d="1">
+<anim i="heavy_run" d="9" l="1">
+<anim i="heavy_stance" d="1">
+<anim i="heavy_upslash_parta" d="5">
+<anim i="heavy_upslash_partb" d="8" l="1">
+<anim i="heavy_upslash_partc" d="7">
+<anim i="heavy_upslash_partd" d="1">
+<anim i="heavyfallslash_parta" d="3">
+<anim i="heavyfallslash_partb" d="1" l="1">
+<anim i="heavyfallslash_partc" d="1">
+<anim i="heavyhorizontalslash_parta" d="6">
+<anim i="heavyhorizontalslash_partb" d="9" l="1">
+<anim i="heavyhorizontalslash_partc" d="7">
+<anim i="heavyjumpslash_parta" d="11">
+<anim i="heavyjumpslash_partb" d="1">
+<anim i="heavyjumpslash_partc" d="6">
+<anim i="heavyjumpslash_partd" d="5">
+<anim i="heavyjumpslash_parte" d="1">
+<anim i="heavystanceidle" d="1" l="1">
+<anim i="heavystancerun" d="9" l="1">
+<anim i="holdshield" d="1">
+<anim i="holdshield_crouch" d="1">
+<anim i="holdshield_defend" d="1">
+<anim i="holdshield_run" d="10" l="1">
+<anim i="holdshield_startrun" d="7">
+<anim i="holdshieldstabattack" d="10">
+<anim i="holdshieldwalk" d="19" l="1">
+<anim i="horse_death" d="11">
+<anim i="horse_grazing" d="44">
+<anim i="horse_idle" d="1" l="1">
+<anim i="horse_pawing" d="28">
+<anim i="horse_rearing" d="23">
+<anim i="horse_run" d="12" l="1">
+<anim i="horse_walk" d="31" l="1">
+<anim i="idle" d="1">
+<anim i="idle2" d="1">
+<anim i="japanesebow" d="32">
+<anim i="japanesebow2" d="42">
+<anim i="js_alert" d="12">
+<anim i="js_hop" d="7">
+<anim i="js_idle" d="1">
+<anim i="js_rise" d="40">
+<anim i="jumpsheathed_parta" d="1">
+<anim i="jumpsheathed_partb" d="2">
+<anim i="jumpsheathed_partc" d="2">
+<anim i="jumpunsheathed_parta" d="1">
+<anim i="jumpunsheathed_partb" d="2">
+<anim i="jumpunsheathed_partc" d="2">
+<anim i="jutsu_air" d="10">
+<anim i="jutsu_blow_parta" d="8">
+<anim i="jutsu_blow_partb" d="18">
+<anim i="jutsu_ground_parta" d="9">
+<anim i="jutsu_ground_partb" d="1">
+<anim i="jutsu_punch_parta" d="5">
+<anim i="jutsu_punch_partb" d="2">
+<anim i="katanaattack" d="10">
+<anim i="katanadropdown" d="1">
+<anim i="katanajump" d="4">
+<anim i="kimono_idle_1" d="1" l="1">
+<anim i="kimono_idle_2" d="1" l="1">
+<anim i="kimono_walk_1" d="40" l="1">
+<anim i="kimono_walk_2" d="40" l="1">
+<anim i="kneegroin" d="30">
+<anim i="kneegroin_victim" d="41">
+<anim i="kneel" d="13">
+<anim i="kneeltostand" d="21">
+<anim i="kunaithrow" d="12">
+<anim i="launchopponent" d="14">
+<anim i="liedown" d="1">
+<anim i="light_afterslashpose" d="1">
+<anim i="light_downslash_parta" d="12">
+<anim i="light_downslash_partb" d="9" l="1">
+<anim i="light_downslash_partc" d="4">
+<anim i="light_downslash_partd" d="1">
+<anim i="light_fallslash_parta" d="7">
+<anim i="light_fallslash_partb" d="1">
+<anim i="light_fallslash_partc" d="1">
+<anim i="light_horslash_parta" d="13">
+<anim i="light_horslash_partb" d="9" l="1">
+<anim i="light_horslash_partc" d="6">
+<anim i="light_horslash_partd" d="1">
+<anim i="light_jumpslash_parta" d="2">
+<anim i="light_jumpslash_partb" d="1">
+<anim i="light_jumpslash_partc" d="5">
+<anim i="light_jumpslash_partd" d="1">
+<anim i="light_run" d="9" l="1">
+<anim i="light_stance" d="1">
+<anim i="light_upslash_parta" d="6">
+<anim i="light_upslash_partb" d="9" l="1">
+<anim i="light_upslash_partc" d="5">
+<anim i="light_upslash_partd" d="1">
+<anim i="lighthorizontalslash" d="3">
+<anim i="lightjumpslash_parta" d="5">
+<anim i="lightjumpslash_partb" d="1">
+<anim i="lightjumpslash_partc" d="1">
+<anim i="lightstanceidle" d="1" l="1">
+<anim i="lightstancerun" d="9" l="1">
+<anim i="masahiro_floating" d="19" l="1">
+<anim i="mining" d="15" l="1">
+<anim i="mounted_idle" d="1" l="1">
+<anim i="mounted_run" d="1" l="1">
+<anim i="mounted_walk" d="1" l="1">
+<anim i="narutorun" d="12" l="1">
+<anim i="ninjarun" d="9" l="1">
+<anim i="ninjashurikenjump_land" d="3">
+<anim i="ninjashurikenjump_midairfalling" d="8">
+<anim i="ninjashurikenjump_midairrising" d="8">
+<anim i="ninjashurikenjump_start" d="5">
+<anim i="ninjashurikenmidairthrow" d="5">
+<anim i="ninjashurikenthrow" d="12">
+<anim i="ninjaslash" d="8">
+<anim i="ninjasmokebombvanish" d="12">
+<anim i="ninjastealthwalk" d="25" l="1">
+<anim i="nodepose_1" d="1">
+<anim i="nodepose_10" d="1">
+<anim i="nodepose_2" d="1">
+<anim i="nodepose_3" d="1">
+<anim i="nodepose_4" d="1">
+<anim i="nodepose_5" d="1">
+<anim i="nodepose_6" d="1">
+<anim i="nodepose_7" d="1">
+<anim i="nodepose_8" d="1">
+<anim i="nodepose_9" d="1">
+<anim i="ogre_death" d="54">
+<anim i="ogre_fidget" d="19">
+<anim i="ogre_idle" d="1" l="1">
+<anim i="ogre_nap1_end" d="16">
+<anim i="ogre_nap1_mid" d="21" l="1">
+<anim i="ogre_nap1_start" d="10">
+<anim i="ogre_nap2_end" d="23">
+<anim i="ogre_nap2_start" d="39">
+<anim i="ogre_run" d="22" l="1">
+<anim i="ogre_stomp" d="10">
+<anim i="ogre_stompend" d="9">
+<anim i="ogre_stomphit" d="4">
+<anim i="ogre_swingdown" d="16">
+<anim i="ogre_swingdownend" d="11">
+<anim i="ogre_swingdownhit" d="5">
+<anim i="ogre_swingup" d="13">
+<anim i="ogre_swingupend" d="11">
+<anim i="ogre_swinguphit" d="5">
+<anim i="ogre_throw" d="20">
+<anim i="ogre_walk" d="24" l="1">
+<anim i="oldman_idle" d="1" l="1">
+<anim i="oldman_show" d="3">
+<anim i="oldman_walk" d="36" l="1">
+<anim i="pullbackarrow" d="9">
+<anim i="pullbackarrow_full" d="15">
+<anim i="punch" d="31">
+<anim i="punch_end" d="11">
+<anim i="punch_start" d="3">
+<anim i="punchcombo_parta" d="5">
+<anim i="punchcombo_partb" d="6">
+<anim i="punchcombo_partc" d="7">
+<anim i="punchcombo_partd" d="12">
+<anim i="punchground_parta" d="7">
+<anim i="punchground_partb" d="16">
+<anim i="punchlunge_end" d="3">
+<anim i="punchlunge_mid" d="1">
+<anim i="punchlunge_start" d="14">
+<anim i="reversed_fallslash_parta" d="5">
+<anim i="reversed_fallslash_partb" d="1">
+<anim i="reversed_fallslash_partc" d="1">
+<anim i="reversed_jumpslash_parta" d="7">
+<anim i="reversed_jumpslash_partb" d="1">
+<anim i="reversed_jumpslash_partc" d="5">
+<anim i="reversed_jumpslash_partd" d="1">
+<anim i="reversed_run" d="9" l="1">
+<anim i="reversed_slash_parta" d="4">
+<anim i="reversed_slash_partb" d="9" l="1">
+<anim i="reversed_slash_partc" d="6">
+<anim i="reversed_slash_partd" d="1">
+<anim i="reversed_stance" d="1">
+<anim i="run_normalpeople" d="16" l="1">
+<anim i="run_sheathed" d="9" l="1">
+<anim i="runinterror" d="11" l="1">
+<anim i="seppuku_end" d="14">
+<anim i="seppuku_mid" d="16">
+<anim i="seppuku_nohead" d="26">
+<anim i="seppuku_start" d="16">
+<anim i="sheathedjump" d="2">
+<anim i="sheathedland" d="1">
+<anim i="sheathesword" d="7">
+<anim i="sheathesword3" d="33">
+<anim i="sheathetoidle" d="8">
+<anim i="shoulderweapon" d="1">
+<anim i="shunpo_end" d="1">
+<anim i="shunpo_start" d="4">
+<anim i="sit" d="1" l="1">
+<anim i="sit2" d="1">
+<anim i="sit3" d="1">
+<anim i="spartakick_end" d="17">
+<anim i="spartakick_start" d="7">
+<anim i="spear_flourish" d="33">
+<anim i="spear_flurry" d="25">
+<anim i="spear_idle" d="1">
+<anim i="spear_kick_parta" d="5">
+<anim i="spear_kick_partb" d="6">
+<anim i="spear_kick_partc" d="2">
+<anim i="spear_kick_partd" d="8">
+<anim i="spear_launch" d="21">
+<anim i="spear_lunge_parta" d="7">
+<anim i="spear_lunge_partb" d="1">
+<anim i="spear_lunge_partc" d="10">
+<anim i="spear_relax" d="1">
+<anim i="spear_relax2" d="1">
+<anim i="spear_relax3" d="1">
+<anim i="spear_relaxwalk" d="20" l="1">
+<anim i="spear_spin_parta" d="5">
+<anim i="spear_spin_partb" d="12">
+<anim i="spear_spin_partc" d="4">
+<anim i="spear_stab_parta" d="8">
+<anim i="spear_stab_partb" d="7">
+<anim i="spear_swing" d="21">
+<anim i="spear_throw" d="22">
+<anim i="spearbowdropdown" d="5">
+<anim i="spearbowjump" d="4">
+<anim i="spider_attackend" d="10">
+<anim i="spider_attackstart" d="7">
+<anim i="spider_death" d="26">
+<anim i="spider_death2" d="9">
+<anim i="spider_descend" d="25" l="1">
+<anim i="spider_dig" d="25" l="1">
+<anim i="spider_flinch" d="12">
+<anim i="spider_idle" d="1">
+<anim i="spider_lunge" d="9">
+<anim i="spider_walk" d="25" l="1">
+<anim i="stabattack" d="14">
+<anim i="stag_charge" d="13" l="1">
+<anim i="stomp_parta" d="10">
+<anim i="stomp_partb" d="1">
+<anim i="taunt" d="25">
+<anim i="throwgrenade" d="9">
+<anim i="tired" d="15" l="1">
+<anim i="tired_nosword" d="15" l="1">
+<anim i="walk" d="20" l="1">
+<anim i="walk_normalpeople" d="20" l="1">
+<anim i="walkwithbow" d="20" l="1">
+<anim i="walkwithkatana" d="20" l="1">
+<anim i="walkwithknife" d="20" l="1">
+<anim i="walkwithspear" d="20" l="1">
+<anim i="warcry_end" d="19">
+<anim i="warcry_start" d="4">
+<anim i="wolf_bite" d="16">
+<anim i="wolf_death" d="37">
+<anim i="wolf_downed" d="1" l="1">
+<anim i="wolf_getupfromdowned" d="37">
+<anim i="wolf_howl" d="40">
+<anim i="wolf_idle" d="1" l="1">
+<anim i="wolf_launched" d="7">
+<anim i="wolf_launchedend" d="14">
+<anim i="wolf_pounce_end" d="7">
+<anim i="wolf_pounce_mid" d="17">
+<anim i="wolf_pounce_midhigh" d="17">
+<anim i="wolf_pounce_start" d="9">
+<anim i="wolf_run" d="15" l="1">
+<anim i="wolf_snarl" d="5" l="1">
+<anim i="wolf_walk" d="27" l="1">
+<anim i="wolf_walkbackwards" d="27" l="1">
+<anim i="zom_attack" d="20">
+<anim i="zom_attack2" d="36">
+<anim i="zom_attack3" d="34">
+<anim i="zom_crawl" d="34" l="1">
+<anim i="zom_crawlattack_parta" d="24">
+<anim i="zom_crawlattack_partb" d="24" l="1">
+<anim i="zom_crawldie" d="8">
+<anim i="zom_downedtocrawl" d="92">
+<anim i="zom_getup" d="95">
+<anim i="zom_idle" d="56" l="1">
+<anim i="zom_outground" d="56">
+<anim i="zom_run" d="20" l="1">
+<anim i="zom_stumble" d="39">
+<anim i="zom_walk" d="36">
+<anim i="zom_walk2" d="36">
+<anim i="zom_walk3" d="36">

@@ -1,0 +1,623 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--
+<obj><id>7</id><name>Obj_FloorSwitch</name><x>200</x><property>triggered object,triggered object...</property></obj>
+<obj><id>33</id><name>Obj_Lever</name><x>200</x><property>triggered object|triggered object...,enabled state</property></obj>
+<obj><id>32</id><name>Trap_Kunai</name><x>200</x><y>300</y><property>angle, speed, kunaicount, spread, bigdamage</property></obj>
+<obj><id>42</id><name>Trap_KunaiAuto</name><x>200</x><y>300</y><property>angle, speed, kunaicount, spread, onDuration, offDuration, startInterval, active, bigDamage</property></obj>
+<obj><id>43</id><name>Trap_SawBladesAuto</name><x>200</x><property>direction, onDuration, offDuration, startInterval, active, xvel, yvel, bigDamage</property></obj>
+<obj><id>44</id><name>Trap_CrushingBlockAuto</name><x>200</x><y>0</y><property>onDuration, offDuration, startInterval, active, bigDamage</property></obj>
+<obj><id>45</id><name>Trap_CrushingColumnAuto</name><x>200</x><y>0</y><property>onDuration, offDuration, startInterval, active, floorY</property></obj>
+<obj><id>46</id><name>Trap_ElementAuto</name><x>200</x><property>direction, elementType, onDuration, offDuration, startInterval, active</property></obj>
+<obj><id>47</id><name>Trap_Jump</name><x>200</x><property>active, frame</property></obj>
+<obj><id>48</id><name>Trap_SpikesAuto</name><x>200</x><property>direction, onDuration, offDuration, startInterval, active, spikelook, bigDamage</property></obj>
+<obj><id>49</id><name>Trap_Boulder</name><x>200</x><property>xvel, yvel, bigDamage</property></obj>
+<obj><id>50</id><name>Trap_SpikeBallAuto</name><x>200</x><property>rotation speed, frame, initial rotation, bigDamage</property></obj>
+<obj><id>51</id><name>Obj_LowCeiling</name><x>0</x><y>200</y><property>frame</property></obj>
+-->
+
+<traproomdata>
+	<!--<default>
+		<room>
+			<width>1000</width>
+			<obj><id>46</id><name>Trap_ElementAuto</name><x>200</x><property>0,3,0,60,30,1</property></obj>
+			<obj><id>46</id><name>Trap_ElementAuto</name><x>400</x><property>0,3,0,60,0,1</property></obj>
+			<obj><id>46</id><name>Trap_ElementAuto</name><x>600</x><property>0,3,0,60,30,1</property></obj>
+			<obj><id>46</id><name>Trap_ElementAuto</name><x>800</x><property>0,3,0,60,0,1</property></obj>
+		</room>
+	</default>-->
+	
+	<easy>
+		<room>
+		<!-- 1x sawblade -->
+			<width>800</width>
+			<obj><id>43</id><name>Trap_SawBladesAuto</name><x>400</x><property>0,24,24,0,1</property></obj>
+		</room>
+		<room>
+		<!-- 1x spikes -->
+			<width>800</width>
+			<obj><id>48</id><name>Trap_SpikesAuto</name><x>400</x><property>0,24,24,0,1</property></obj>
+		</room>
+		<room>
+			<!-- 1x element trap -->
+			<width>800</width>
+			<obj><id>46</id><name>Trap_ElementAuto</name><x>400</x><property>0,0,0,48,0,1</property></obj>
+		</room>
+		<room>
+			<!-- horizontal shoot past head -->
+			<width>800</width>
+			<obj><id>7</id><name>Obj_FloorSwitch</name><x>200</x><property>Trap_Kunai</property></obj>
+			<obj><id>32</id><name>Trap_Kunai</name><x>800</x><y>310</y><property>270,5</property></obj>
+		</room>
+		<room>
+			<!-- vertical shoot down -->
+			<width>800</width>
+			<obj><id>7</id><name>Obj_FloorSwitch</name><x>400</x><property>Trap_Kunai</property></obj>
+			<obj><id>32</id><name>Trap_Kunai</name><x>400</x><y>0</y><property>180,20,1</property></obj>
+		</room>
+		<room>
+			<!-- vertical shoot down x3 -->
+			<width>800</width>
+			<obj><id>7</id><name>Obj_FloorSwitch1</name><x>300</x><property>Trap_Kunai1</property></obj>
+			<obj><id>32</id><name>Trap_Kunai1</name><x>300</x><y>0</y><property>180,20,1</property></obj>
+			<obj><id>7</id><name>Obj_FloorSwitch2</name><x>400</x><property>Trap_Kunai2</property></obj>
+			<obj><id>32</id><name>Trap_Kunai2</name><x>400</x><y>0</y><property>180,20,1</property></obj>
+			<obj><id>7</id><name>Obj_FloorSwitch3</name><x>500</x><property>Trap_Kunai3</property></obj>
+			<obj><id>32</id><name>Trap_Kunai3</name><x>500</x><y>0</y><property>180,20,1</property></obj>
+		</room>
+		<room>
+			<!-- vertical shoot down x5 -->
+			<width>800</width>
+			<obj><id>7</id><name>Obj_FloorSwitch1</name><x>200</x><property>Trap_Kunai1</property></obj>
+			<obj><id>32</id><name>Trap_Kunai1</name><x>200</x><y>0</y><property>180,20,1</property></obj>
+			<obj><id>7</id><name>Obj_FloorSwitch2</name><x>300</x><property>Trap_Kunai2</property></obj>
+			<obj><id>32</id><name>Trap_Kunai2</name><x>300</x><y>0</y><property>180,20,1</property></obj>
+			<obj><id>7</id><name>Obj_FloorSwitch3</name><x>400</x><property>Trap_Kunai3</property></obj>
+			<obj><id>32</id><name>Trap_Kunai3</name><x>400</x><y>0</y><property>180,20,1</property></obj>
+			<obj><id>7</id><name>Obj_FloorSwitch4</name><x>500</x><property>Trap_Kunai4</property></obj>
+			<obj><id>32</id><name>Trap_Kunai4</name><x>500</x><y>0</y><property>180,20,1</property></obj>
+			<obj><id>7</id><name>Obj_FloorSwitch5</name><x>600</x><property>Trap_Kunai5</property></obj>
+			<obj><id>32</id><name>Trap_Kunai5</name><x>600</x><y>0</y><property>180,20,1</property></obj>
+		</room>
+		<room>
+			<!-- vertical shoot down auto -->
+			<width>800</width>
+			<obj><id>42</id><name>Trap_KunaiAuto</name><x>400</x><y>0</y><property>180,20,1,0,0,24,0,1</property></obj>
+		</room>
+		<room>
+			<!-- vertical shoot down auto x3 slow -->
+			<width>800</width>
+			<obj><id>42</id><name>Trap_KunaiAuto</name><x>200</x><y>0</y><property>180,10,1,0,0,36,0,1</property></obj>
+			<obj><id>42</id><name>Trap_KunaiAuto</name><x>400</x><y>0</y><property>180,10,1,0,0,36,0,1</property></obj>
+			<obj><id>42</id><name>Trap_KunaiAuto</name><x>600</x><y>0</y><property>180,10,1,0,0,36,0,1</property></obj>
+		</room>
+		<room>
+		<!-- triggered crushing column -->
+			<width>800</width>
+			<obj><id>45</id><name>Trap_CrushingColumnAuto</name><x>400</x><y>0</y><property>48,1000,0,0</property></obj>
+			<obj><id>7</id><name>Obj_FloorSwitch</name><x>400</x><property>Trap_CrushingColumnAuto</property></obj>
+			<obj><id>54</id><name>Obj_BonePile</name><x>400</x><property>1</property></obj>
+		</room>
+		<room>
+		<!-- triggered crushing block -->
+			<width>800</width>
+			<obj><id>44</id><name>Trap_CrushingBlockAuto</name><x>400</x><y>100</y><property>48,1000,0,0</property></obj>
+			<obj><id>7</id><name>Obj_FloorSwitch</name><x>400</x><property>Trap_CrushingBlockAuto</property></obj>
+		</room>
+		<room>
+		<!-- jump x3 -->
+			<width>800</width>
+			<obj><id>47</id><name>Trap_Jump</name><x>300</x><property>1</property></obj>
+			<obj><id>47</id><name>Trap_Jump</name><x>400</x><property>1</property></obj>
+			<obj><id>47</id><name>Trap_Jump</name><x>500</x><property>1</property></obj>
+		</room>
+		<room>
+		<!-- triggered crushing block -->
+			<width>800</width>
+			<obj><id>44</id><name>Trap_CrushingBlockAuto</name><x>500</x><y>100</y><property>24,24,0,0</property></obj>
+			<obj><id>7</id><name>Obj_FloorSwitch</name><x>400</x><property>Trap_CrushingBlockAuto</property></obj>
+		</room>
+	</easy>
+	
+	<!--------------------------------------------------------------------------------------------------------------------------->
+	
+	<medium>
+		<room>
+			<!-- spikes and ball: timing -->
+			<width>1000</width>
+			<obj><id>51</id><name>Obj_LowCeiling</name><x>0</x><y>200</y><property>1</property></obj>
+			<obj><id>48</id><name>Trap_SpikesAuto</name><x>500</x><property>0,24,36,0,1</property></obj>
+			<obj><id>50</id><name>Trap_SpikeBallAuto</name><x>500</x><y>200</y><property>2,1,90</property></obj>
+		</room>
+		<room>
+			<!-- vertical shoot down x3 angle: stay on plate -->
+			<width>800</width>
+			<obj><id>7</id><name>Obj_FloorSwitch1</name><x>300</x><property>Trap_Kunai1</property></obj>
+			<obj><id>32</id><name>Trap_Kunai1</name><x>300</x><y>0</y><property>165,30,2,30</property></obj>
+			<obj><id>7</id><name>Obj_FloorSwitch2</name><x>400</x><property>Trap_Kunai2</property></obj>
+			<obj><id>32</id><name>Trap_Kunai2</name><x>400</x><y>0</y><property>165,30,2,30</property></obj>
+			<obj><id>7</id><name>Obj_FloorSwitch3</name><x>500</x><property>Trap_Kunai3</property></obj>
+			<obj><id>32</id><name>Trap_Kunai3</name><x>500</x><y>0</y><property>165,30,2,30</property></obj>
+		</room>
+		<room>
+			<!-- horizontal shoot past head 2 diraction: keep running -->
+			<width>800</width>
+			<obj><id>7</id><name>Obj_FloorSwitch</name><x>150</x><property>Trap_KunaiAuto</property></obj>
+			<obj><id>42</id><name>Trap_KunaiAuto</name><x>800</x><y>310</y><property>270,10,1,0,0,24,0,0</property></obj>
+			<obj><id>7</id><name>Obj_FloorSwitch2</name><x>650</x><property>Trap_KunaiAuto2</property></obj>
+			<obj><id>42</id><name>Trap_KunaiAuto2</name><x>0</x><y>310</y><property>90,10,1,0,0,24,0,0</property></obj>
+		</room>
+		<room>
+			<!-- vertical shoot down x3 angle: 1 3 stay on plate, 2 move -->
+			<width>800</width>
+			<obj><id>7</id><name>Obj_FloorSwitch1</name><x>200</x><property>Trap_Kunai1</property></obj>
+			<obj><id>32</id><name>Trap_Kunai1</name><x>200</x><y>0</y><property>165,30,2,30</property></obj>
+			<obj><id>7</id><name>Obj_FloorSwitch2</name><x>400</x><property>Trap_Kunai2</property></obj>
+			<obj><id>32</id><name>Trap_Kunai2</name><x>400</x><y>0</y><property>180,20,1</property></obj>
+			<obj><id>7</id><name>Obj_FloorSwitch3</name><x>600</x><property>Trap_Kunai3</property></obj>
+			<obj><id>32</id><name>Trap_Kunai3</name><x>600</x><y>0</y><property>165,30,2,30</property></obj>
+		</room>
+		<room>
+			<!-- vertical shoot down x3 angle: 1 3 move, 2 stay on plate -->
+			<width>800</width>
+			<obj><id>7</id><name>Obj_FloorSwitch1</name><x>200</x><property>Trap_Kunai1</property></obj>
+			<obj><id>32</id><name>Trap_Kunai1</name><x>200</x><y>0</y><property>180,20,1,0</property></obj>
+			<obj><id>7</id><name>Obj_FloorSwitch2</name><x>400</x><property>Trap_Kunai2</property></obj>
+			<obj><id>32</id><name>Trap_Kunai2</name><x>400</x><y>0</y><property>165,30,2,30</property></obj>
+			<obj><id>7</id><name>Obj_FloorSwitch3</name><x>600</x><property>Trap_Kunai3</property></obj>
+			<obj><id>32</id><name>Trap_Kunai3</name><x>600</x><y>0</y><property>180,20,1,0</property></obj>
+		</room>
+		<room>
+			<!-- vertical shoot down auto x3 -->
+			<width>800</width>
+			<obj><id>42</id><name>Trap_KunaiAuto1</name><x>200</x><y>0</y><property>180,20,1,0,0,24,0</property></obj>
+			<obj><id>42</id><name>Trap_KunaiAuto2</name><x>400</x><y>0</y><property>180,20,1,0,0,24,8</property></obj>
+			<obj><id>42</id><name>Trap_KunaiAuto3</name><x>600</x><y>0</y><property>180,20,1,0,0,24,16</property></obj>
+		</room>
+		<room>
+			<!-- crushing column x3 -->
+			<width>800</width>
+			<obj><id>45</id><name>Trap_CrushingColumnAuto</name><x>250</x><y>0</y><property>48,48,0,1</property></obj>
+			<obj><id>45</id><name>Trap_CrushingColumnAuto</name><x>400</x><y>0</y><property>48,48,16,1</property></obj>
+			<obj><id>45</id><name>Trap_CrushingColumnAuto</name><x>550</x><y>0</y><property>48,48,32,1</property></obj>
+			<obj><id>54</id><name>Obj_BonePile</name><x>400</x><property>1</property></obj>
+		</room>
+		<room>
+			<!-- crushing column fast x3 -->
+			<width>800</width>
+			<obj><id>45</id><name>Trap_CrushingColumnAuto</name><x>250</x><y>0</y><property>0,0,0,1</property></obj>
+			<obj><id>45</id><name>Trap_CrushingColumnAuto</name><x>400</x><y>0</y><property>0,0,16,1</property></obj>
+			<obj><id>45</id><name>Trap_CrushingColumnAuto</name><x>550</x><y>0</y><property>0,0,32,1</property></obj>
+			<obj><id>54</id><name>Obj_BonePile</name><x>250</x><property>1</property></obj>
+		</room>
+		<room>
+		<!-- triggered crushing block x5 -->
+			<width>800</width>
+			<obj><id>44</id><name>Trap_CrushingBlockAuto1</name><x>200</x><y>100</y><property>48,1000,0,0</property></obj>
+			<obj><id>7</id><name>Obj_FloorSwitch1</name><x>200</x><property>Trap_CrushingBlockAuto1</property></obj>
+			<obj><id>44</id><name>Trap_CrushingBlockAuto2</name><x>300</x><y>100</y><property>48,1000,0,0</property></obj>
+			<obj><id>7</id><name>Obj_FloorSwitch2</name><x>300</x><property>Trap_CrushingBlockAuto2</property></obj>
+			<obj><id>44</id><name>Trap_CrushingBlockAuto3</name><x>400</x><y>100</y><property>48,1000,0,0</property></obj>
+			<obj><id>7</id><name>Obj_FloorSwitch3</name><x>400</x><property>Trap_CrushingBlockAuto3</property></obj>
+			<obj><id>44</id><name>Trap_CrushingBlockAuto4</name><x>500</x><y>100</y><property>48,1000,0,0</property></obj>
+			<obj><id>7</id><name>Obj_FloorSwitch4</name><x>500</x><property>Trap_CrushingBlockAuto4</property></obj>
+			<obj><id>44</id><name>Trap_CrushingBlockAuto5</name><x>600</x><y>100</y><property>48,1000,0,0</property></obj>
+			<obj><id>7</id><name>Obj_FloorSwitch5</name><x>600</x><property>Trap_CrushingBlockAuto5</property></obj>
+		</room>
+		<room>
+		<!-- moving sawblade -->
+			<width>800</width>
+			<obj><id>43</id><name>Trap_SawBladesAuto</name><x>200</x><property>0,48,48,0,1,10</property></obj>
+		</room>
+		<room>
+		<!-- jump x3 with spikes -->
+			<width>800</width>
+			<obj><id>47</id><name>Trap_Jump</name><x>250</x><property>1</property></obj>
+			<obj><id>47</id><name>Trap_Jump</name><x>350</x><property>1</property></obj>
+			<obj><id>47</id><name>Trap_Jump</name><x>450</x><property>1</property></obj>
+			<obj><id>48</id><name>Trap_SpikesAuto</name><x>600</x><property>0,48,48,0,1</property></obj>
+		</room>
+		<room>
+		<!-- boulder jump -->
+			<width>800</width>
+			<obj><id>7</id><name>Obj_FloorSwitch</name><x>200</x><property>Trap_Boulder</property></obj>
+			<obj><id>47</id><name>Trap_Jump</name><x>460</x><property>1</property></obj>
+			<obj><id>49</id><name>Trap_Boulder</name><x>800</x><property>-10,0</property></obj>
+		</room>
+		<room>
+		<!-- 5x spikes -->
+			<width>800</width>
+			<obj><id>48</id><name>Trap_SpikesAuto1</name><x>200</x><property>0,24,48,0,1</property></obj>
+			<obj><id>48</id><name>Trap_SpikesAuto2</name><x>300</x><property>0,24,48,6,1</property></obj>
+			<obj><id>48</id><name>Trap_SpikesAuto3</name><x>400</x><property>0,24,48,12,1</property></obj>
+			<obj><id>48</id><name>Trap_SpikesAuto4</name><x>500</x><property>0,24,48,18,1</property></obj>
+			<obj><id>48</id><name>Trap_SpikesAuto5</name><x>600</x><property>0,24,48,24,1</property></obj>
+			<obj><id>33</id><name>Obj_Lever</name><x>700</x><property>Trap_SpikesAuto1|Trap_SpikesAuto2|Trap_SpikesAuto3|Trap_SpikesAuto4|Trap_SpikesAuto5,1</property></obj>
+		</room>
+		<room>
+		<!-- 5x sawblades -->
+			<width>800</width>
+			<obj><id>43</id><name>Trap_SawBladesAuto1</name><x>200</x><property>0,24,48,0,1</property></obj>
+			<obj><id>43</id><name>Trap_SawBladesAuto2</name><x>300</x><property>0,24,48,6,1</property></obj>
+			<obj><id>43</id><name>Trap_SawBladesAuto3</name><x>400</x><property>0,24,48,12,1</property></obj>
+			<obj><id>43</id><name>Trap_SawBladesAuto4</name><x>500</x><property>0,24,48,18,1</property></obj>
+			<obj><id>43</id><name>Trap_SawBladesAuto5</name><x>600</x><property>0,24,48,24,1</property></obj>
+			<obj><id>33</id><name>Obj_Lever</name><x>700</x><property>Trap_SawBladesAuto1|Trap_SawBladesAuto2|Trap_SawBladesAuto3|Trap_SawBladesAuto4|Trap_SawBladesAuto5,1</property></obj>
+		</room>
+		<room>
+			<!-- angle shoot down 9 -->
+			<width>800</width>
+			<obj><id>7</id><name>Obj_FloorSwitch</name><x>400</x><property>Trap_Kunai</property></obj>
+			<obj><id>32</id><name>Trap_Kunai</name><x>400</x><y>0</y><property>100,10,9,20</property></obj>
+		</room>
+		<room>
+			<!-- 4x spikeball -->
+			<width>1400</width>
+			<obj><id>51</id><name>Obj_LowCeiling</name><x>0</x><y>200</y><property>1</property></obj>
+			<obj><id>50</id><name>Trap_SpikeBallAuto</name><x>400</x><property>2,1,0</property></obj>
+			<obj><id>50</id><name>Trap_SpikeBallAuto</name><x>600</x><y>200</y><property>2,1,0</property></obj>
+			<obj><id>50</id><name>Trap_SpikeBallAuto</name><x>800</x><property>2,1,0</property></obj>
+			<obj><id>50</id><name>Trap_SpikeBallAuto</name><x>1000</x><y>200</y><property>2,1,0</property></obj>
+		</room>
+		<room>
+			<!-- 4x spikeball reverse -->
+			<width>1400</width>
+			<obj><id>51</id><name>Obj_LowCeiling</name><x>0</x><y>200</y><property>1</property></obj>
+			<obj><id>50</id><name>Trap_SpikeBallAuto</name><x>400</x><property>-2,1,0</property></obj>
+			<obj><id>50</id><name>Trap_SpikeBallAuto</name><x>600</x><y>200</y><property>-2,1,0</property></obj>
+			<obj><id>50</id><name>Trap_SpikeBallAuto</name><x>800</x><property>-2,1,0</property></obj>
+			<obj><id>50</id><name>Trap_SpikeBallAuto</name><x>1000</x><y>200</y><property>-2,1,0</property></obj>
+		</room>
+		<room>
+			<!-- 4x fire element trap -->
+			<width>1000</width>
+			<obj><id>46</id><name>Trap_ElementAuto</name><x>200</x><property>0,0,0,96,48,1</property></obj>
+			<obj><id>46</id><name>Trap_ElementAuto</name><x>400</x><property>0,0,0,96,0,1</property></obj>
+			<obj><id>46</id><name>Trap_ElementAuto</name><x>600</x><property>0,0,0,96,48,1</property></obj>
+			<obj><id>46</id><name>Trap_ElementAuto</name><x>800</x><property>0,0,0,96,0,1</property></obj>
+		</room>
+		<room>
+			<!-- 4x wind element trap -->
+			<width>1000</width>
+			<obj><id>46</id><name>Trap_ElementAuto</name><x>200</x><property>0,1,0,96,48,1</property></obj>
+			<obj><id>46</id><name>Trap_ElementAuto</name><x>400</x><property>0,1,0,96,0,1</property></obj>
+			<obj><id>46</id><name>Trap_ElementAuto</name><x>600</x><property>0,1,0,96,48,1</property></obj>
+			<obj><id>46</id><name>Trap_ElementAuto</name><x>800</x><property>0,1,0,96,0,1</property></obj>
+		</room>
+		<room>
+			<!-- 4x water element trap -->
+			<width>1000</width>
+			<obj><id>46</id><name>Trap_ElementAuto</name><x>200</x><property>0,2,0,96,72,1</property></obj>
+			<obj><id>46</id><name>Trap_ElementAuto</name><x>400</x><property>0,2,0,96,0,1</property></obj>
+			<obj><id>46</id><name>Trap_ElementAuto</name><x>600</x><property>0,2,0,96,72,1</property></obj>
+			<obj><id>46</id><name>Trap_ElementAuto</name><x>800</x><property>0,2,0,96,0,1</property></obj>
+		</room>
+		<room>
+			<!-- 4x earth element trap -->
+			<width>1150</width>
+			<obj><id>46</id><name>Trap_ElementAuto</name><x>200</x><property>0,3,0,96,72,1</property></obj>
+			<obj><id>46</id><name>Trap_ElementAuto</name><x>450</x><property>0,3,0,96,0,1</property></obj>
+			<obj><id>46</id><name>Trap_ElementAuto</name><x>700</x><property>0,3,0,96,72,1</property></obj>
+			<obj><id>46</id><name>Trap_ElementAuto</name><x>950</x><property>0,3,0,96,0,1</property></obj>
+		</room>
+	</medium>
+	
+	<!--------------------------------------------------------------------------------------------------------------------------->
+	
+	<hard>
+		<room>
+			<!-- vertical shoot down auto x3 closer -->
+			<width>800</width>
+			<obj><id>42</id><name>Trap_KunaiAuto1</name><x>300</x><y>0</y><property>180,20,1,0,0,24,0,1</property></obj>
+			<obj><id>42</id><name>Trap_KunaiAuto2</name><x>400</x><y>0</y><property>180,20,1,0,0,24,8,1</property></obj>
+			<obj><id>42</id><name>Trap_KunaiAuto3</name><x>500</x><y>0</y><property>180,20,1,0,0,24,16,1</property></obj>
+		</room>
+		<room>
+			<!-- crushing column fast x5 -->
+			<width>1100</width>
+			<obj><id>45</id><name>Trap_CrushingColumnAuto</name><x>250</x><y>0</y><property>0,0,0,1</property></obj>
+			<obj><id>45</id><name>Trap_CrushingColumnAuto</name><x>400</x><y>0</y><property>0,0,16,1</property></obj>
+			<obj><id>45</id><name>Trap_CrushingColumnAuto</name><x>550</x><y>0</y><property>0,0,32,1</property></obj>
+			<obj><id>45</id><name>Trap_CrushingColumnAuto</name><x>700</x><y>0</y><property>0,0,48,1</property></obj>
+			<obj><id>45</id><name>Trap_CrushingColumnAuto</name><x>850</x><y>0</y><property>0,0,64,1</property></obj>
+		</room>
+		<room>
+		<!-- moving sawblade x3 -->
+			<width>800</width>
+			<obj><id>43</id><name>Trap_SawBladesAuto1</name><x>200</x><property>0,48,24,0,1,10</property></obj>
+			<obj><id>43</id><name>Trap_SawBladesAuto2</name><x>200</x><property>0,48,24,24,1,10</property></obj>
+			<obj><id>43</id><name>Trap_SawBladesAuto3</name><x>200</x><property>0,48,24,48,1,10</property></obj>
+			<obj><id>33</id><name>Obj_Lever</name><x>700</x><property>Trap_SawBladesAuto1|Trap_SawBladesAuto2|Trap_SawBladesAuto3,1</property></obj>
+		</room>
+		<room>
+		<!-- jump x3 with spikes fast -->
+			<width>800</width>
+			<obj><id>47</id><name>Trap_Jump</name><x>250</x><property>1</property></obj>
+			<obj><id>47</id><name>Trap_Jump</name><x>350</x><property>1</property></obj>
+			<obj><id>47</id><name>Trap_Jump</name><x>450</x><property>1</property></obj>
+			<obj><id>48</id><name>Trap_SpikesAuto</name><x>600</x><property>0,48,24,0,1</property></obj>
+		</room>
+		<room>
+		<!-- 10x sawblades -->
+			<width>800</width>
+			<obj><id>43</id><name>Trap_SawBladesAuto1</name><x>200</x><property>0,24,48,0,1</property></obj>
+			<obj><id>43</id><name>Trap_SawBladesAuto2</name><x>250</x><property>0,24,48,6,1</property></obj>
+			<obj><id>43</id><name>Trap_SawBladesAuto3</name><x>300</x><property>0,24,48,12,1</property></obj>
+			<obj><id>43</id><name>Trap_SawBladesAuto4</name><x>350</x><property>0,24,48,18,1</property></obj>
+			<obj><id>43</id><name>Trap_SawBladesAuto5</name><x>400</x><property>0,24,48,24,1</property></obj>
+			<obj><id>43</id><name>Trap_SawBladesAuto6</name><x>450</x><property>0,24,48,30,1</property></obj>
+			<obj><id>43</id><name>Trap_SawBladesAuto7</name><x>500</x><property>0,24,48,36,1</property></obj>
+			<obj><id>43</id><name>Trap_SawBladesAuto8</name><x>550</x><property>0,24,48,42,1</property></obj>
+			<obj><id>43</id><name>Trap_SawBladesAuto9</name><x>600</x><property>0,24,48,48,1</property></obj>
+			<obj><id>43</id><name>Trap_SawBladesAuto10</name><x>650</x><property>0,24,48,54,1</property></obj>
+			<obj><id>33</id><name>Obj_Lever</name><x>700</x><property>Trap_SawBladesAuto1|Trap_SawBladesAuto2|Trap_SawBladesAuto3|Trap_SawBladesAuto4|Trap_SawBladesAuto5|Trap_SawBladesAuto6|Trap_SawBladesAuto7|Trap_SawBladesAuto8|Trap_SawBladesAuto9|Trap_SawBladesAuto10,1</property></obj>
+		</room>
+		<room>
+			<!-- angle shoot down 9, 3x trigger -->
+			<width>800</width>
+			<obj><id>7</id><name>Obj_FloorSwitch</name><x>200</x><property>Trap_Kunai</property></obj>
+			<obj><id>7</id><name>Obj_FloorSwitch</name><x>400</x><property>Trap_Kunai</property></obj>
+			<obj><id>7</id><name>Obj_FloorSwitch</name><x>600</x><property>Trap_Kunai</property></obj>
+			<obj><id>32</id><name>Trap_Kunai</name><x>400</x><y>0</y><property>100,10,9,20</property></obj>
+		</room>
+		<room>
+		<!-- boulder reverse jump with sawblades -->
+			<width>1000</width>
+			<obj><id>7</id><name>Obj_FloorSwitch</name><x>400</x><property>Trap_Boulder</property></obj>
+			<obj><id>47</id><name>Trap_Jump</name><x>600</x><property>1</property></obj>
+			<obj><id>49</id><name>Trap_Boulder</name><x>0</x><property>10,0</property></obj>
+			<obj><id>43</id><name>Trap_SawBladesAuto</name><x>800</x><property>0,24,24,0,1</property></obj>
+			<obj><id>33</id><name>Obj_Lever</name><x>900</x><property>Obj_FloorSwitch|Trap_SawBladesAuto|Trap_Jump,1</property></obj>
+		</room>
+		<room>
+			<!-- 4x spikeball fast -->
+			<width>1400</width>
+			<obj><id>51</id><name>Obj_LowCeiling</name><x>0</x><y>200</y><property>1</property></obj>
+			<obj><id>50</id><name>Trap_SpikeBallAuto</name><x>400</x><property>4,1,0</property></obj>
+			<obj><id>50</id><name>Trap_SpikeBallAuto</name><x>600</x><y>200</y><property>4,1,0</property></obj>
+			<obj><id>50</id><name>Trap_SpikeBallAuto</name><x>800</x><property>4,1,0</property></obj>
+			<obj><id>50</id><name>Trap_SpikeBallAuto</name><x>1000</x><y>200</y><property>4,1,0</property></obj>
+		</room>
+		<room>
+			<!-- 4x spikeball reverse fast -->
+			<width>1400</width>
+			<obj><id>51</id><name>Obj_LowCeiling</name><x>0</x><y>200</y><property>1</property></obj>
+			<obj><id>50</id><name>Trap_SpikeBallAuto</name><x>400</x><property>-4,1,0</property></obj>
+			<obj><id>50</id><name>Trap_SpikeBallAuto</name><x>600</x><y>200</y><property>-4,1,0</property></obj>
+			<obj><id>50</id><name>Trap_SpikeBallAuto</name><x>800</x><property>-4,1,0</property></obj>
+			<obj><id>50</id><name>Trap_SpikeBallAuto</name><x>1000</x><y>200</y><property>-4,1,0</property></obj>
+		</room>
+		<room>
+			<!-- 4x spikeball ver2 -->
+			<width>1400</width>
+			<obj><id>51</id><name>Obj_LowCeiling</name><x>0</x><y>200</y><property>1</property></obj>
+			<obj><id>50</id><name>Trap_SpikeBallAuto</name><x>400</x><property>-2,1,0</property></obj>
+			<obj><id>50</id><name>Trap_SpikeBallAuto</name><x>600</x><y>200</y><property>2,1,0</property></obj>
+			<obj><id>50</id><name>Trap_SpikeBallAuto</name><x>800</x><property>-2,1,0</property></obj>
+			<obj><id>50</id><name>Trap_SpikeBallAuto</name><x>1000</x><y>200</y><property>2,1,0</property></obj>
+		</room>
+		<room>
+			<!-- 4x fire element trap fast -->
+			<width>1000</width>
+			<obj><id>46</id><name>Trap_ElementAuto</name><x>200</x><property>0,0,0,60,30,1</property></obj>
+			<obj><id>46</id><name>Trap_ElementAuto</name><x>400</x><property>0,0,0,60,0,1</property></obj>
+			<obj><id>46</id><name>Trap_ElementAuto</name><x>600</x><property>0,0,0,60,30,1</property></obj>
+			<obj><id>46</id><name>Trap_ElementAuto</name><x>800</x><property>0,0,0,60,0,1</property></obj>
+		</room>
+		<room>
+			<!-- 4x wind element trap fast -->
+			<width>1000</width>
+			<obj><id>46</id><name>Trap_ElementAuto</name><x>200</x><property>0,1,0,60,30,1</property></obj>
+			<obj><id>46</id><name>Trap_ElementAuto</name><x>400</x><property>0,1,0,60,0,1</property></obj>
+			<obj><id>46</id><name>Trap_ElementAuto</name><x>600</x><property>0,1,0,60,30,1</property></obj>
+			<obj><id>46</id><name>Trap_ElementAuto</name><x>800</x><property>0,1,0,60,0,1</property></obj>
+		</room>
+		<room>
+			<!-- 4x water element trap fast -->
+			<width>1000</width>
+			<obj><id>46</id><name>Trap_ElementAuto</name><x>200</x><property>0,2,0,60,36,1</property></obj>
+			<obj><id>46</id><name>Trap_ElementAuto</name><x>400</x><property>0,2,0,60,0,1</property></obj>
+			<obj><id>46</id><name>Trap_ElementAuto</name><x>600</x><property>0,2,0,60,36,1</property></obj>
+			<obj><id>46</id><name>Trap_ElementAuto</name><x>800</x><property>0,2,0,60,0,1</property></obj>
+		</room>
+		<room>
+			<!-- 4x earth element trap fast -->
+			<width>1150</width>
+			<obj><id>46</id><name>Trap_ElementAuto</name><x>200</x><property>0,3,0,60,36,1</property></obj>
+			<obj><id>46</id><name>Trap_ElementAuto</name><x>450</x><property>0,3,0,60,0,1</property></obj>
+			<obj><id>46</id><name>Trap_ElementAuto</name><x>700</x><property>0,3,0,60,36,1</property></obj>
+			<obj><id>46</id><name>Trap_ElementAuto</name><x>950</x><property>0,3,0,60,0,1</property></obj>
+		</room>
+		<room>
+			<!-- 4x spikeball fast slow -->
+			<width>1400</width>
+			<obj><id>51</id><name>Obj_LowCeiling</name><x>0</x><y>200</y><property>1</property></obj>
+			<obj><id>50</id><name>Trap_SpikeBallAuto</name><x>400</x><property>2,1,0</property></obj>
+			<obj><id>50</id><name>Trap_SpikeBallAuto</name><x>600</x><y>200</y><property>4,1,0</property></obj>
+			<obj><id>50</id><name>Trap_SpikeBallAuto</name><x>800</x><property>2,1,0</property></obj>
+			<obj><id>50</id><name>Trap_SpikeBallAuto</name><x>1000</x><y>200</y><property>4,1,0</property></obj>
+		</room>
+	</hard>
+	
+	<!--------------------------------------------------------------------------------------------------------------------------->
+	
+	<veryhard>
+		<room>
+			<!-- spikes and ball: timing -->
+			<width>1000</width>
+			<obj><id>51</id><name>Obj_LowCeiling</name><x>0</x><y>200</y><property>1</property></obj>
+			<obj><id>48</id><name>Trap_SpikesAuto</name><x>500</x><property>0,24,36,0,1,1,1</property></obj>
+			<obj><id>50</id><name>Trap_SpikeBallAuto</name><x>500</x><y>200</y><property>2,1,90,1</property></obj>
+		</room>
+		<room>
+			<!-- horizontal shoot past head: keep running -->
+			<width>800</width>
+			<obj><id>7</id><name>Obj_FloorSwitch</name><x>150</x><property>Trap_KunaiAuto</property></obj>
+			<obj><id>42</id><name>Trap_KunaiAuto</name><x>800</x><y>310</y><property>270,10,1,0,24,24,0,0,1</property></obj>
+		</room>
+		<room>
+			<!-- horizontal shoot past head 2 directions: keep running -->
+			<width>800</width>
+			<obj><id>7</id><name>Obj_FloorSwitch</name><x>150</x><property>Trap_KunaiAuto</property></obj>
+			<obj><id>42</id><name>Trap_KunaiAuto</name><x>800</x><y>310</y><property>270,10,1,0,0,24,0,0,1</property></obj>
+			<obj><id>7</id><name>Obj_FloorSwitch2</name><x>650</x><property>Trap_KunaiAuto2</property></obj>
+			<obj><id>42</id><name>Trap_KunaiAuto2</name><x>0</x><y>310</y><property>90,10,1,0,0,24,0,0,1</property></obj>
+		</room>
+		<room>
+			<!-- vertical shoot down x3 angle: stay on plate -->
+			<width>800</width>
+			<obj><id>7</id><name>Obj_FloorSwitch1</name><x>300</x><property>Trap_Kunai1</property></obj>
+			<obj><id>32</id><name>Trap_Kunai1</name><x>300</x><y>0</y><property>165,30,2,30,1</property></obj>
+			<obj><id>7</id><name>Obj_FloorSwitch2</name><x>400</x><property>Trap_Kunai2</property></obj>
+			<obj><id>32</id><name>Trap_Kunai2</name><x>400</x><y>0</y><property>165,30,2,30,1</property></obj>
+			<obj><id>7</id><name>Obj_FloorSwitch3</name><x>500</x><property>Trap_Kunai3</property></obj>
+			<obj><id>32</id><name>Trap_Kunai3</name><x>500</x><y>0</y><property>165,30,2,30,1</property></obj>
+		</room>
+		<room>
+			<!-- vertical shoot down x3 angle: 1 3 stay on plate, 2 move -->
+			<width>800</width>
+			<obj><id>7</id><name>Obj_FloorSwitch1</name><x>200</x><property>Trap_Kunai1</property></obj>
+			<obj><id>32</id><name>Trap_Kunai1</name><x>200</x><y>0</y><property>165,30,2,30,1</property></obj>
+			<obj><id>7</id><name>Obj_FloorSwitch2</name><x>400</x><property>Trap_Kunai2</property></obj>
+			<obj><id>32</id><name>Trap_Kunai2</name><x>400</x><y>0</y><property>180,20,1,0,1</property></obj>
+			<obj><id>7</id><name>Obj_FloorSwitch3</name><x>600</x><property>Trap_Kunai3</property></obj>
+			<obj><id>32</id><name>Trap_Kunai3</name><x>600</x><y>0</y><property>165,30,2,30,1</property></obj>
+		</room>
+		<room>
+			<!-- vertical shoot down x3 angle: 1 3 move, 2 stay on plate -->
+			<width>800</width>
+			<obj><id>7</id><name>Obj_FloorSwitch1</name><x>200</x><property>Trap_Kunai1</property></obj>
+			<obj><id>32</id><name>Trap_Kunai1</name><x>200</x><y>0</y><property>180,20,1,0,1</property></obj>
+			<obj><id>7</id><name>Obj_FloorSwitch2</name><x>400</x><property>Trap_Kunai2</property></obj>
+			<obj><id>32</id><name>Trap_Kunai2</name><x>400</x><y>0</y><property>165,30,2,30,1</property></obj>
+			<obj><id>7</id><name>Obj_FloorSwitch3</name><x>600</x><property>Trap_Kunai3</property></obj>
+			<obj><id>32</id><name>Trap_Kunai3</name><x>600</x><y>0</y><property>180,20,1,0,1</property></obj>
+		</room>
+		<room>
+			<!-- vertical shoot down auto x3-->
+			<width>800</width>
+			<obj><id>42</id><name>Trap_KunaiAuto1</name><x>300</x><y>0</y><property>180,20,1,0,0,24,0,1,1</property></obj>
+			<obj><id>42</id><name>Trap_KunaiAuto2</name><x>400</x><y>0</y><property>180,20,1,0,0,24,8,1,1</property></obj>
+			<obj><id>42</id><name>Trap_KunaiAuto3</name><x>500</x><y>0</y><property>180,20,1,0,0,24,16,1,1</property></obj>
+		</room>
+		<room>
+		<!-- moving sawblade -->
+			<width>800</width>
+			<obj><id>43</id><name>Trap_SawBladesAuto</name><x>200</x><property>0,48,48,0,1,10,1</property></obj>
+		</room>
+		<room>
+		<!-- moving sawblade x3 -->
+			<width>800</width>
+			<obj><id>43</id><name>Trap_SawBladesAuto1</name><x>200</x><property>0,48,24,0,1,10,0,1</property></obj>
+			<obj><id>43</id><name>Trap_SawBladesAuto2</name><x>200</x><property>0,48,24,24,1,10,0,1</property></obj>
+			<obj><id>43</id><name>Trap_SawBladesAuto3</name><x>200</x><property>0,48,24,48,1,10,0,1</property></obj>
+			<obj><id>33</id><name>Obj_Lever</name><x>700</x><property>Trap_SawBladesAuto1|Trap_SawBladesAuto2|Trap_SawBladesAuto3,1</property></obj>
+		</room>
+		<room>
+		<!-- jump x3 with spikes -->
+			<width>800</width>
+			<obj><id>47</id><name>Trap_Jump</name><x>250</x><property>1</property></obj>
+			<obj><id>47</id><name>Trap_Jump</name><x>350</x><property>1</property></obj>
+			<obj><id>47</id><name>Trap_Jump</name><x>450</x><property>1</property></obj>
+			<obj><id>48</id><name>Trap_SpikesAuto</name><x>600</x><property>0,48,48,0,1,1,1</property></obj>
+		</room>
+		<room>
+		<!-- boulder jump -->
+			<width>800</width>
+			<obj><id>7</id><name>Obj_FloorSwitch</name><x>200</x><property>Trap_Boulder</property></obj>
+			<obj><id>47</id><name>Trap_Jump</name><x>460</x><property>1</property></obj>
+			<obj><id>49</id><name>Trap_Boulder</name><x>800</x><property>-10,0,1</property></obj>
+		</room>
+		<room>
+		<!-- 10x sawblades -->
+			<width>800</width>
+			<obj><id>43</id><name>Trap_SawBladesAuto1</name><x>200</x><property>0,24,48,0,1,0,0,1</property></obj>
+			<obj><id>43</id><name>Trap_SawBladesAuto2</name><x>250</x><property>0,24,48,6,1,0,0,1</property></obj>
+			<obj><id>43</id><name>Trap_SawBladesAuto3</name><x>300</x><property>0,24,48,12,1,0,0,1</property></obj>
+			<obj><id>43</id><name>Trap_SawBladesAuto4</name><x>350</x><property>0,24,48,18,1,0,0,1</property></obj>
+			<obj><id>43</id><name>Trap_SawBladesAuto5</name><x>400</x><property>0,24,48,24,1,0,0,1</property></obj>
+			<obj><id>43</id><name>Trap_SawBladesAuto6</name><x>450</x><property>0,24,48,30,1,0,0,1</property></obj>
+			<obj><id>43</id><name>Trap_SawBladesAuto7</name><x>500</x><property>0,24,48,36,1,0,0,1</property></obj>
+			<obj><id>43</id><name>Trap_SawBladesAuto8</name><x>550</x><property>0,24,48,42,1,0,0,1</property></obj>
+			<obj><id>43</id><name>Trap_SawBladesAuto9</name><x>600</x><property>0,24,48,48,1,0,0,1</property></obj>
+			<obj><id>43</id><name>Trap_SawBladesAuto10</name><x>650</x><property>0,24,48,54,1,0,0,1</property></obj>
+			<obj><id>33</id><name>Obj_Lever</name><x>700</x><property>Trap_SawBladesAuto1|Trap_SawBladesAuto2|Trap_SawBladesAuto3|Trap_SawBladesAuto4|Trap_SawBladesAuto5|Trap_SawBladesAuto6|Trap_SawBladesAuto7|Trap_SawBladesAuto8|Trap_SawBladesAuto9|Trap_SawBladesAuto10,1</property></obj>
+		</room>
+		<room>
+		<!-- 9x sawblades fast -->
+			<width>800</width>
+			<obj><id>43</id><name>Trap_SawBladesAuto1</name><x>200</x><property>0,24,24,0,1,0,0,1</property></obj>
+			<obj><id>43</id><name>Trap_SawBladesAuto2</name><x>250</x><property>0,24,24,6,1,0,0,1</property></obj>
+			<obj><id>43</id><name>Trap_SawBladesAuto3</name><x>300</x><property>0,24,24,12,1,0,0,1</property></obj>
+			<obj><id>43</id><name>Trap_SawBladesAuto4</name><x>350</x><property>0,24,24,18,1,0,0,1</property></obj>
+			<obj><id>43</id><name>Trap_SawBladesAuto5</name><x>400</x><property>0,24,24,24,1,0,0,1</property></obj>
+			<obj><id>43</id><name>Trap_SawBladesAuto6</name><x>450</x><property>0,24,24,30,1,0,0,1</property></obj>
+			<obj><id>43</id><name>Trap_SawBladesAuto7</name><x>500</x><property>0,24,24,36,1,0,0,1</property></obj>
+			<obj><id>43</id><name>Trap_SawBladesAuto8</name><x>550</x><property>0,24,24,42,1,0,0,1</property></obj>
+			<obj><id>43</id><name>Trap_SawBladesAuto9</name><x>600</x><property>0,24,24,48,1,0,0,1</property></obj>
+			<obj><id>33</id><name>Obj_Lever</name><x>700</x><property>Trap_SawBladesAuto1|Trap_SawBladesAuto2|Trap_SawBladesAuto3|Trap_SawBladesAuto4|Trap_SawBladesAuto5|Trap_SawBladesAuto6|Trap_SawBladesAuto7|Trap_SawBladesAuto8|Trap_SawBladesAuto9,1</property></obj>
+		</room>
+		<room>
+			<!-- angle shoot down 9 -->
+			<width>800</width>
+			<obj><id>7</id><name>Obj_FloorSwitch</name><x>400</x><property>Trap_Kunai</property></obj>
+			<obj><id>32</id><name>Trap_Kunai</name><x>400</x><y>0</y><property>100,10,9,20,1</property></obj>
+		</room>
+		<room>
+			<!-- angle shoot down 9, 3x trigger -->
+			<width>800</width>
+			<obj><id>7</id><name>Obj_FloorSwitch</name><x>200</x><property>Trap_Kunai</property></obj>
+			<obj><id>7</id><name>Obj_FloorSwitch</name><x>400</x><property>Trap_Kunai</property></obj>
+			<obj><id>7</id><name>Obj_FloorSwitch</name><x>600</x><property>Trap_Kunai</property></obj>
+			<obj><id>32</id><name>Trap_Kunai</name><x>400</x><y>0</y><property>100,10,9,20,1</property></obj>
+		</room>
+		<room>
+		<!-- boulder reverse jump with sawblades -->
+			<width>1000</width>
+			<obj><id>7</id><name>Obj_FloorSwitch</name><x>400</x><property>Trap_Boulder</property></obj>
+			<obj><id>47</id><name>Trap_Jump</name><x>600</x><property>1</property></obj>
+			<obj><id>49</id><name>Trap_Boulder</name><x>0</x><property>10,0,1</property></obj>
+			<obj><id>43</id><name>Trap_SawBladesAuto</name><x>800</x><property>0,24,24,0,1,0,0,1</property></obj>
+			<obj><id>33</id><name>Obj_Lever</name><x>900</x><property>Obj_FloorSwitch|Trap_SawBladesAuto|Trap_Jump,1</property></obj>
+		</room>
+		<room>
+			<!-- 4x spikeball fast -->
+			<width>1400</width>
+			<obj><id>51</id><name>Obj_LowCeiling</name><x>0</x><y>200</y><property>1</property></obj>
+			<obj><id>50</id><name>Trap_SpikeBallAuto</name><x>400</x><property>4,1,0,1</property></obj>
+			<obj><id>50</id><name>Trap_SpikeBallAuto</name><x>600</x><y>200</y><property>4,1,0,1</property></obj>
+			<obj><id>50</id><name>Trap_SpikeBallAuto</name><x>800</x><property>4,1,0,1</property></obj>
+			<obj><id>50</id><name>Trap_SpikeBallAuto</name><x>1000</x><y>200</y><property>4,1,0,1</property></obj>
+		</room>
+		<room>
+			<!-- 4x spikeball reverse fast -->
+			<width>1400</width>
+			<obj><id>51</id><name>Obj_LowCeiling</name><x>0</x><y>200</y><property>1</property></obj>
+			<obj><id>50</id><name>Trap_SpikeBallAuto</name><x>400</x><property>-4,1,0,1</property></obj>
+			<obj><id>50</id><name>Trap_SpikeBallAuto</name><x>600</x><y>200</y><property>-4,1,0,1</property></obj>
+			<obj><id>50</id><name>Trap_SpikeBallAuto</name><x>800</x><property>-4,1,0,1</property></obj>
+			<obj><id>50</id><name>Trap_SpikeBallAuto</name><x>1000</x><y>200</y><property>-4,1,0,1</property></obj>
+		</room>
+		<room>
+			<!-- 4x spikeball ver2 -->
+			<width>1400</width>
+			<obj><id>51</id><name>Obj_LowCeiling</name><x>0</x><y>200</y><property>1</property></obj>
+			<obj><id>50</id><name>Trap_SpikeBallAuto</name><x>400</x><property>-2,1,0,1</property></obj>
+			<obj><id>50</id><name>Trap_SpikeBallAuto</name><x>600</x><y>200</y><property>2,1,0,1</property></obj>
+			<obj><id>50</id><name>Trap_SpikeBallAuto</name><x>800</x><property>-2,1,0,1</property></obj>
+			<obj><id>50</id><name>Trap_SpikeBallAuto</name><x>1000</x><y>200</y><property>2,1,0,1</property></obj>
+		</room>
+		<room>
+			<!-- 4x spikeball fast slow -->
+			<width>1400</width>
+			<obj><id>51</id><name>Obj_LowCeiling</name><x>0</x><y>200</y><property>1</property></obj>
+			<obj><id>50</id><name>Trap_SpikeBallAuto</name><x>400</x><property>2,1,0,1</property></obj>
+			<obj><id>50</id><name>Trap_SpikeBallAuto</name><x>600</x><y>200</y><property>4,1,0,1</property></obj>
+			<obj><id>50</id><name>Trap_SpikeBallAuto</name><x>800</x><property>2,1,0,1</property></obj>
+			<obj><id>50</id><name>Trap_SpikeBallAuto</name><x>1000</x><y>200</y><property>4,1,0,1</property></obj>
+		</room>
+	</veryhard>
+
+	</traproomdata>
