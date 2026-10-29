@@ -24,7 +24,7 @@ mkdir -p reference && zstd -dc ~/Downloads/sshd-seed-2026-08-24.tar.zst | tar -x
 ```
 
 It carries 10,857 files: `extracted` 7,072 · `decompiled` 3,710 · `wiki-png` 44 · `traced` 8 ·
-`preservation` 7 · `decrypted` 7 · `predecessors` 4 · `tools` 3 · `permission` 2.
+`preservation` 7 · `decrypted` 7 · `predecessors` 4 · `tools` 3.
 
 ## 2. What is NOT backed up, and why that is fine
 
