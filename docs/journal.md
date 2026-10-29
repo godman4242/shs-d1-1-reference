@@ -178,3 +178,24 @@ not [recoverable]"* from *structurally unrecoverable* to *held, encrypted, with 
 decryption path known to have worked once on this very payload*. **L7's gate is still
 Kheshav's ears (R4) — this does not change that.** It changes whether there is
 anything to listen to besides YouTube rips.
+
+## 2026-10-29 (later) — playability verification + audio ruling
+
+**Playability verified by real input, not just boot logs.** The decoded
+payload was driven with synthesized mouse drags (CGEvent) at the canvas:
+
+- idle/ambient animation moves 31/5920 sampled pixels over 2s
+- one slash-line drag moves 5,589/5920 (94% of the frame) — a full-screen
+  reaction, far above ambient motion, so the input path works
+- abuse pass (25 rapid random clicks + 3 full-window drags): process
+  stayed alive, no panic/crash in the log
+
+**Audio ruling (decide-and-flag).** The repo's `audio/sfx/*.mp3` are
+re-encodes of the mobile cut; the recovered `audio/live-web-v0.682/`
+holds 44 original DefineSound exports. Ruling: BOTH stay. The live-web
+directory is the canonical original source; the mobile re-encodes are kept
+because they are the smaller, already-integrated set and deleting them
+would break nothing but buys nothing. A recreation should use the
+live-web originals. Veto note: if byte-for-byte parity with the 2015
+shipped build matters to you, swap `audio/sfx/` for the live-web set and
+regenerate the MANIFEST.
