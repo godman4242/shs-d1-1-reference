@@ -1,5 +1,7 @@
 # SHS:Duels 1:1 Recreation — Complete Reference Corpus
 
+> **Provenance:** SSHD 1:1 — irreplaceable reference seed (payload extraction + custom crackers). PRIVATE. Study-only, never distributed. Owner-attested Lut Games grant — full text in `docs/recovery/OWNER_PERMISSION_RULING.md`.
+
 **Everything a person needs to recreate *Straw Hat Samurai: Duels* (2015, Explosive Barrel / Lut Games) without redoing the archaeology.**
 
 > ⚠️ **Legal note, read first.** The original game's rights belong to Lut Games / Explosive Barrel. The corpus owner holds a personal, owner-granted permission (Kongregate PM + email, 2026-07-24) to make a 1:1 recreation **including art** — but **redistribution scope was never confirmed**. Treat this repo as **study material for recreators**; do not re-host, sell, or claim these files. Music credit: Kevin MacLeod (separate license). Wiki text: CC-BY-SA (cite, don't paste).
