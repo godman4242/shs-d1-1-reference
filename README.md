@@ -1,10 +1,10 @@
 # SHS:Duels 1:1 Recreation — Complete Reference Corpus
 
-> **Provenance:** SSHD 1:1 — irreplaceable reference seed (payload extraction + custom crackers). PRIVATE. Study-only, never distributed. Owner-attested Lut Games grant — full text in `docs/recovery/OWNER_PERMISSION_RULING.md`.
+> **What this is:** an unlicensed fan research archive assembled to make a faithful recreation of *Straw Hat Samurai: Duels* possible. It contains decompiled client code, decrypted data tables, recovered audio, and extracted artwork from the 2015–2016 game by Explosive Barrel / Lut Games.
 
-**Everything a person needs to recreate *Straw Hat Samurai: Duels* (2015, Explosive Barrel / Lut Games) without redoing the archaeology.**
+**Everything a person needs to recreate *Straw Hat Samurai: Duels* without redoing the archaeology.**
 
-> ⚠️ **Legal note, read first.** The original game's rights belong to Lut Games / Explosive Barrel. The corpus owner holds a personal, owner-granted permission (Kongregate PM + email, 2026-07-24) to make a 1:1 recreation **including art** — but **redistribution scope was never confirmed**. Treat this repo as **study material for recreators**; do not re-host, sell, or claim these files. Music credit: Kevin MacLeod (separate license). Wiki text: CC-BY-SA (cite, don't paste).
+> ⚠️ **Legal note, read first.** All original rights belong to Lut Games / Explosive Barrel. **No formal permission has been obtained from the rights holder yet.** Redistribution of these files may violate copyright and/or the original game's terms of service. Use this corpus as research material for your own recreation; do not re-host, sell, or claim these files as your own. Wiki text: CC-BY-SA (cite, don't paste).
 
 ---
 
@@ -71,7 +71,7 @@
 2. **Web wording.** `questdata.xml` is Android wording. Web wording survives only as OCR in `docs/research/WEB_DIALOGUE_STORYLINE.md` (347 events; 169 share no 4-word phrase with Android). Ruling: **web wins** where they diverge.
 3. ~~**Web audio.** Only 13 of 43 SFX have recovered waveforms — 30 remain synth-from-video targets.~~ **RESOLVED 2026-10-29 — the web `soundresource.swf` was recovered live from the Player.io CDN and decrypted: all 44 SFX are present as original assets** (31 of them absent from this repo). See `docs/research/RESOURCE_LIBRARIES_RECOVERY.md`.
 4. **Web-vs-Android numbers.** Known divergences (Focus 192 vs 120, behead ×1.3 vs ×1.5, survival waves 33-39, sell prices, gold tiers 5×) — full list in `docs/research/DIVERGENCES.md`.
-5. ~~**Portraits + chapter splash cards.** 67 portraits + 14 splash cards lived in the never-captured `imageresource.swf` — only video frames hold them.~~ **RESOLVED 2026-10-29 — `imageresource.swf` was recovered live from the Player.io CDN (`/res/` path) and decrypted. 21 resource images + 26 payload images + 2 backgrounds are now on disk** at `audio/live-web-v0.682/images/`. See `docs/research/RESOURCE_LIBRARIES_RECOVERY.md`.
+5. ~~**Portraits + chapter splash cards.** 67 portraits + 14 splash cards lived in the never-captured `imageresource.swf` — only video frames hold them.~~ **RESOLVED 2026-10-29 — `imageresource.swf` was recovered live from the Player.io CDN (`/res/` path) and decrypted. 21 resource images + 26 payload images + 2 backgrounds are now on disk** at `audio/live-web-v0.682/images/`. See `docs/research/RESOURCE_LIBRARY_RECOVERY.md`.
 6. **XP curve beyond L10.** Soft unknown; measure from video.
 7. ~~**String table.**~~ **RESOLVED 2026-10-29 — the complete web string table (`shs3_en.xml`, 3,165 entries, id range 0..11515) was recovered live from the Player.io CDN.** It supersedes the partial 2,555-entry mobile table, closes blocker **L1b**, and retires the −3060 id-offset heuristic (item names now resolve 821/821 at offset 0). See `docs/research/STRING_TABLE_RECOVERY.md`.
 
