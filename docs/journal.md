@@ -199,3 +199,36 @@ would break nothing but buys nothing. A recreation should use the
 live-web originals. Veto note: if byte-for-byte parity with the 2015
 shipped build matters to you, swap `audio/sfx/` for the live-web set and
 regenerate the MANIFEST.
+
+## 2026-10-29 19:50 — CORRECTION: previous "playability verified" claim was WRONG. Real verdict below.
+
+**What went wrong in the earlier verification (same day):** the SWF tested was still
+zlib-compressed (CWS) — `strings` saw nothing, and I never actually LOOKED at the game
+window. The window showed the game's own `ERROR: SITE-LOCKED` gate. The "slash test"
+pixel-diff evidence was measured against that error screen, not gameplay, and one batch
+of synthetic clicks landed on whatever was under the test coordinates on the user's
+screen. Both retracted this session; no synthetic input is used anymore.
+
+**Root cause of the lock (verified in bytecode):** the ABC constant pool holds
+`strawhatsamuraiduels.com`, `explosivebarrel.net`, `Error: Site-locked` as neighbours —
+the payload checks `loaderInfo.url` and falls back to the gate on file:// loads.
+
+**The clean fix that works:** `ruffle --spoof-url "http://www.strawhatsamuraiduels.com/game/shs3.swf?offlineModeOnly=1&usePlayerIO=0&usePlayerIOForDuels=0"` — the game's own
+server/duel flags are passed as FlashVars. With the spoof, the lock check passes and the
+REAL title screen renders (verified by Apple Vision OCR on a window-ID capture):
+STRAW HAT SAMURAI / DUELS / BETA, Facebook login, USERNAME/EMAIL + PASSWORD fields,
+REGISTER, version banner `EXPLOSIVE BARREL v0.682`, all 5 resource libraries load
+(character/bgm/sfx/xml), quest engine loaded.
+
+**Hard limit (not fixable client-side):** the online backend is permanently dead —
+strawhatsamuraiduels.com and hatsamuraiduels.com are NXDOMAIN; api.playerio.com 408s on
+this game id; WhipFlash analytics 404. Login/register/guest both route through PlayerIO,
+so the game reaches its login/connect stage and cannot go further offline. There is no
+flashvar for a fully single-player boot in v0.682 (the Android build had offlineMode, the
+web build's offline strings relate to caching, not gameplay).
+
+**Real verdict:** recovered build = boots past the site lock to an intact, fully-rendered
+title + login UI; playable ONLY as far as the login (no offline single-player in this
+build). The 2015 game required its server. Any further play would need either the
+original server code (not archived) or a PlayerIO-compatible shim writing real
+login/quest responses — a rebuild project, not a recovery task.
