@@ -10,6 +10,56 @@
 
 ---
 
+## 2026-10-29 — LIVE-CDN RE-SURVEY: string table + resource libraries recovered
+
+The Player.io CDN was still serving the game filesystem. Two blockers that had
+been recorded as permanently lost were recovered **live** — no cracking, no
+Wayback, no brute force.
+
+**1. The complete English string table.** `lang/shs3_en.xml` was served live
+under both game ids. The **web** build (v0.706) is the full original:
+**3,165 trans-units, id range `0 .. 11515`**. The previously-recorded table
+(2,555 entries) came from the **mobile** build and was a truncated cut, not the
+original.
+
+* The shipped file is UTF-16 and contains **one bare `&`** (id 615) — it
+  **does not parse as shipped**. That is an upstream bug, not a capture
+  artefact.
+* **L1b is closed.** Item-name resolution under the old −3060 id-offset
+  heuristic was 323/821 (39.3%). Against the complete table it is
+  **821/821 (100%) at offset 0**. The offset was an artefact of the truncated
+  table and should be retired.
+* NPC names now resolve **490/490** from `npcdata.xml`.
+
+**2. All five resource SWF libraries.** They were never only on the dead
+`strawhatsamuraiduels.com` server — the client loads them from the game
+filesystem at **`/res/`**, and all five return **200** live. Decrypted with the
+already-documented scheme (key = `filename.charCodeAt(1)`).
+
+* `soundresource.swf` → **44 DefineSound** tags, vs **14** in the repo's
+  mobile cut. **31 sounds the repo does not have** (`bowFire`, `criticalDamage`,
+  `kiai`, `mining`, `swordClash`, `throwingKnife`, `waterSplash`, …).
+* The repo's `audio/sfx/*.mp3` are **re-encodes** — 0 of 28 are byte-identical
+  to the recovered originals.
+* Also recovered: 21 resource images, 26 payload images, 2 backgrounds.
+
+**3. The payload runs.** The live v0.682 payload decodes with the existing
+`tools/payload_decode.py` and boots under Ruffle: `language xml loaded`,
+`quest engine loaded`, `game loaded`, `intro ended`. Only dead ad-trackers
+(`whipflash`, `youtube`, `adsrvr.org`) and the expired game server fail.
+**The game is playable offline** with the recovered payload + string table.
+
+**Falsifiable checks recorded:** a wrong decryption key yields SWF version 118
+and a failing zlib stream — with the correct key all five libraries inflate
+cleanly and FFDec reads the expected tag counts. Both new tools exit `2` on
+unparseable input (verified red on garbage / empty / missing files).
+
+**Added:** `tools/shs_strings_extract.py`, `tools/shs_resource_decrypt.py`,
+`docs/research/STRING_TABLE_RECOVERY.md`,
+`docs/research/RESOURCE_LIBRARIES_RECOVERY.md`,
+`data/live-cdn-capture-v0.682-v0.706/`, `audio/live-web-v0.682/`.
+
+
 ## STAGE 0 — the evidence index (script, 0 agents)
 
 ### ⚑ FINDING S0-1 — `GAUNTLET.md` §2.1 is WRONG about `bindata/`, disproven by direct inspection

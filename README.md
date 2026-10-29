@@ -69,15 +69,24 @@
 ## Known gaps — so nobody hunts ghosts
 1. **The server.** PlayerIO MMORPG backend, dead ~2016. Nothing to recover — it must be **re-designed** (the client's `playerio` calls in `decompiled/web-v0.717/` are the API contract). Clan wars, PvP tournaments, matchmaking, save format are re-design work.
 2. **Web wording.** `questdata.xml` is Android wording. Web wording survives only as OCR in `docs/research/WEB_DIALOGUE_STORYLINE.md` (347 events; 169 share no 4-word phrase with Android). Ruling: **web wins** where they diverge.
-3. **Web audio.** Only 13 of 43 SFX have recovered waveforms — 30 remain synth-from-video targets.
+3. ~~**Web audio.** Only 13 of 43 SFX have recovered waveforms — 30 remain synth-from-video targets.~~ **RESOLVED 2026-10-29 — the web `soundresource.swf` was recovered live from the Player.io CDN and decrypted: all 44 SFX are present as original assets** (31 of them absent from this repo). See `docs/research/RESOURCE_LIBRARIES_RECOVERY.md`.
 4. **Web-vs-Android numbers.** Known divergences (Focus 192 vs 120, behead ×1.3 vs ×1.5, survival waves 33-39, sell prices, gold tiers 5×) — full list in `docs/research/DIVERGENCES.md`.
-5. **Portraits + chapter splash cards.** 67 portraits + 14 splash cards lived in the never-captured `imageresource.swf` — only video frames hold them.
+5. ~~**Portraits + chapter splash cards.** 67 portraits + 14 splash cards lived in the never-captured `imageresource.swf` — only video frames hold them.~~ **RESOLVED 2026-10-29 — `imageresource.swf` was recovered live from the Player.io CDN (`/res/` path) and decrypted. 21 resource images + 26 payload images + 2 backgrounds are now on disk** at `audio/live-web-v0.682/images/`. See `docs/research/RESOURCE_LIBRARIES_RECOVERY.md`.
 6. **XP curve beyond L10.** Soft unknown; measure from video.
+7. ~~**String table.**~~ **RESOLVED 2026-10-29 — the complete web string table (`shs3_en.xml`, 3,165 entries, id range 0..11515) was recovered live from the Player.io CDN.** It supersedes the partial 2,555-entry mobile table, closes blocker **L1b**, and retires the −3060 id-offset heuristic (item names now resolve 821/821 at offset 0). See `docs/research/STRING_TABLE_RECOVERY.md`.
 
 ## Verify anything yourself (`tools/`)
 ```bash
 # Decrypt any resource blob (key = charCodeAt(1) of its name, e.g. 'h'=104 for shs3resource):
 python3 tools/payload_decode.py <blob.bin> <key>   # → CWS SWF (zlib inside)
+
+# Decrypt a live resource SWF (key is derived from the filename, not passed in):
+python3 tools/shs_resource_decrypt.py soundresource.swf          # → soundresource.dec.swf
+python3 tools/shs_resource_decrypt.py soundresource.swf --check  # validate only
+
+# Read the recovered string table (handles the upstream bare-& defect):
+python3 tools/shs_strings_extract.py data/live-cdn-capture-v0.682-v0.706/shs3_en_web_v0.706.xml
+python3 tools/shs_strings_extract.py <file> --only-missing 4000 4172
 
 # The transform, from ResourceManager.as:205-214:
 #   for i in 3..255: if i%11==0 swap ba[i]<->ba[i+256]; ba[i] ^= key

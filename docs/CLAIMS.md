@@ -173,6 +173,17 @@ All five original resource libraries decrypt with the game's own documented rule
 - **Quote:** internal static var resourceFileNameArray:Array = ["shs3resource.swf","musicresource.swf","soundresource.swf","imageresource.swf","bgresource.swf"]; ... ba = decryptByteArray(ba,resourceFileNameArray[num].charCodeAt(1)); ... for(var i:int = 3; i < 256; i++) { if(i % 11 == 0) { temp = int(ba[i]); ba[i] = ba[i + 256]; ba[i + 256] = temp; } ba[i] ^= key; }
 - **Lane impact:** Cross-lane lever. Brute-force returned key 117 'u' (musicresource), 111 'o' (soundresource), 104 'h' (shs3resource), 103 'g' (bgresource), 109 'm' (imageresource) -- exactly charCodeAt(1) of each name. This is what unlocked L7's audio and it also opens the full mobile art libraries for L6/L3.
 
+### `art-anim-audio-feel/resource-libraries-recovered` — HELD [A2] ✅ NEW 2026-10-29
+
+**All five resource SWF libraries recovered, decrypted and opened.** The prior ledger recorded them as never captured; they were in fact served live from the Player.io CDN under the **`/res/`** path (not `/liveupdate/`).
+
+- **Cite:** `data/live-cdn-capture-v0.682-v0.706/res/*.dec.swf` · `tools/shs_resource_decrypt.py` · `docs/research/RESOURCE_LIBRARIES_RECOVERY.md`
+- **Quote:** `return PlayerIO.gameFS(this.gameid).getUrl("/res/" + param1);` (QueryManagerPIO.as) — `/res/soundresource.swf` returns **200** live (114,631 B).
+- **Decryption:** key = `filename.charCodeAt(1)`; swap `i <-> i+256` when `i % 11 == 0`; XOR byte `i` for `i` in `3..255`. Implemented in `tools/shs_resource_decrypt.py` (stdlib).
+- **Verification (falsifiable):** a wrong key yields SWF version 118 and a failing zlib stream. With the correct key all five inflate cleanly and FFDec reads **44 DefineSound** tags in `soundresource.swf` (vs **14** in the repo's mobile cut), 14 music tracks, 21 images, 2 backgrounds.
+- **Lane impact:** **44 sounds vs 14** — the web build has **3.1x more SFX**, including 31 names absent from this repo (`bowFire`, `criticalDamage`, `kiai`, `mining`, `swordClash`, `throwingKnife`, `waterSplash`, …). These are the **original game assets**; the repo's `audio/sfx/*.mp3` are re-encodes (0 of 28 byte-identical). Staged separately at `audio/live-web-v0.682/` so the mobile build stays diffable.
+- **Playable proof:** the live payload decodes with the existing `tools/payload_decode.py` and boots under Ruffle — `language xml loaded`, `quest engine loaded`, `game loaded`, `intro ended`. Only dead ad-trackers and the expired `strawhatsamuraiduels.com` server fail.
+
 ### `art-anim-audio-feel/surface-bullets-unverified` — STILL_UNHELD [STILL_UNHELD]
 
 Three of the block's five 'Surface' bullets could not be grounded at all, and one of them (scarf physics) has zero counterpart anywhere in 2,768 decompiled classes -- yet the ledger asserts they are already measured/authored.
@@ -332,7 +343,18 @@ The third combat-HUD bar is `reloadbar` — the crit meter — and it fills at e
 - **Quote:** Visibly in the crop: a red-ringed portrait, then THREE stacked bars — green `20/20`, blue `26/26`, and a third tan/olive bar with `CANNOT CHANGE STANCE` printed over it, plus `150% DAMAGE` beneath; top-left `AUTO SLASH OFF`, top-right a red `3` over `HIT COMBO`. Code side: MCSPlayer.as:239 `this.maxreload = 5 * 24;` · :1158-1160 `if(this.reload < this.maxreload)` / `{` / `++this.reload;` · :1168 `StageManager.getBattleUI().updateReload(this.tempreload / (this.maxreload - 24));`
 - **Lane impact:** combat-core + ui-hud: identifies the bar the project has been calling 'Focus'. One resource does three jobs — crit gate, per-slash budget, and stance-change currency (MCSPlayer.as:2977 refuses a switch below maxreload/6; :3100/:3104 charge maxreload/3 or maxreload/6). Bar fills empty-to-full in 96 ticks = 4.0 s at the 24 fps of Mobile.as:117. Note the mobile-build caveat: the dead `baseReload` may be a port simplification.
 
-### `combat-core/string-table-located` — PARTIAL [A2]
+### `combat-core/string-table-located` — HELD [A2] ✅ RESOLVED 2026-10-29
+
+**RESOLVED.** The string table is now **on disk, complete, and parseable**. The prior PARTIAL entry (2,555 entries from the mobile build) is superseded by the **full web table**, recovered live from the Player.io CDN.
+
+The web table is `http://r.playerio.com/r/shsd-server1-eckroutikmljozkzitvg/lang/shs3_en.xml` — **3,165 trans-units, id range `0 .. 11515`**. The client requests exactly this path (`QueryManagerPIO.getResourceURL` -> `/res/`; `LangManager.as:41` -> `Locale.addXMLPath(ENGLISH, server + "shs3_en.xml")`).
+
+- **Cite:** `data/live-cdn-capture-v0.682-v0.706/shs3_en_web_v0.706.xml` · `tools/shs_strings_extract.py` · `docs/research/STRING_TABLE_RECOVERY.md`
+- **Quote:** `Locale.addXMLPath(ENGLISH,_loc2_ + "shs3_en.xml");` (LangManager.as:41) — resolved live to a 613,334-byte UTF-16 XLIFF with **3,165** `<trans-unit>` entries.
+- **Upstream defect (not ours):** the shipped file contains **one bare `&`** (`<source>Full HP & CHI and AP for 1 gold?</source>`, id 615) and therefore **does not parse as shipped**. Any parser must escape bare ampersands; `tools/shs_strings_extract.py` does this and reports the repair count.
+- **Lane impact:** **L1b (string table) is CLOSED.** Item-name resolution was 323/821 (39.3%) under the old −3060 id-offset heuristic; against the complete web table it is **821/821 (100%) at offset 0**. The −3060 offset was an artefact of the truncated mobile table and should be retired. The tool exits `2` on unparseable input (verified red on garbage/empty/missing).
+
+### `combat-core/string-table-located` — PARTIAL [A2] (SUPERSEDED — see RESOLVED above)
 
 The string-table blocker is LOCATED but its bytes are not on disk: on the web build the table is a server-side file `data/shs3_en.xml`, which is why bindata/ was exhausted without finding it; on the mobile build it is embedded as binary asset `_assets/118_Mobile_Lang_EN.bin` inside reference/preservation/shs3_android_payload.swf, which we hold but from which only scripts were ever exported.
 
